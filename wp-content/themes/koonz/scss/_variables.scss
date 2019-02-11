@@ -1,2 +1,104 @@
 $themePath: '/wp-content/themes/koonz/';
 
+
+// Fonts
+
+
+
+// Quatro Regular
+
+
+@mixin quatro_reg {
+  font-family: quatro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+// Quatro Medium
+
+@mixin quatro_medium {
+  font-family: quatro, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+
+
+// Quatro Bold
+
+@mixin quatro_bold {
+  font-family: quatro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+
+
+// Quatro Black
+
+@mixin quatro_black {
+  font-family: quatro, sans-serif;
+	font-weight: 800;
+	font-style: normal;
+}
+
+
+
+
+
+// Slab
+
+
+// Quatro Slab Regular
+
+
+@mixin quatro_slab_regular {
+  font-family: quatro-slab, serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+// Quatro Slab Medium Italic
+
+
+@mixin quatro_slab_medium_italic {
+  font-family: quatro-slab, serif;
+	font-weight: 500;
+	font-style: italic;
+}
+
+
+
+// Quatro Slab Bold
+
+
+@mixin quatro_slab_bold {
+  font-family: quatro-slab, serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+// Quatro Slab Bold Italic 
+
+
+@mixin quatro_slab_bold_italic {
+  font-family: quatro-slab, serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+
+
+
+// colors
+
+
+$black: #02050e;
+$blue: #111f4c;
+$bluelight: #4b98fc;
+$red: #eb434a;
+$grey: #ebeff4;

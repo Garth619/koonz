@@ -34,6 +34,8 @@
 
 <?php the_field( 'review_css','option'); ?>
 
+@import url("https://use.typekit.net/wde8ipm.css");
+
 </style>
 
 <?php wp_head(); ?>
@@ -49,9 +51,59 @@
 	
 	<header>
 		
-		<?php // wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+		<div class="header_left">
+			
+			<a class="" href="<?php bloginfo('url');?>">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/hero_logo-01.svg"/>
+				
+			</a>
+			
+		</div><!-- header_left -->
+		
+		<div class="header_middle">
+			
+			<div class="phone_wrapper">
+				
+				<div class="phone_row">
+					
+					<span class="location_title">District of Columbia</span><!-- location_title -->
+				
+					<a class="phone" href="">(202) 796-3291</a><!-- location_title -->
+					
+				</div><!-- phone_row -->
+				
+				<div class="phone_row">
+					
+					<span class="location_title">Virginia</span><!-- location_title -->
+				
+					<a class="phone" href="">(703) 498-2928</a><!-- location_title -->
+					
+				</div><!-- phone_row -->
+				
+				<div class="phone_row">
+					
+					<span class="location_title">Maryland</span><!-- location_title -->
+				
+					<a class="phone" href="">(301) 637-4614</a><!-- location_title -->
+					
+				</div><!-- phone_row -->
+				
+			</div><!-- phone_wrapper -->
+			
+			<a class="se_habla" href="">Se habla Espanol</a><!-- se_habla -->
+			
+		</div><!-- header_middle -->
+		
+		<div class="header_right"></div><!-- header_right -->
 		
 	</header>
+	
+	<nav>
+		
+		<?php // wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+		
+	</nav>
 				
 
 

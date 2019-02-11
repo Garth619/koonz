@@ -1,0 +1,52 @@
+header {
+	background: #fff;
+	width:100%;
+	height:198px;
+	display: flex;
+}
+
+
+.header_left {
+	display: flex;
+	align-items: center;
+	padding-left:55px;
+}
+
+.phone_wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.phone_row {
+	font-size:22px;
+	letter-spacing: 0.1em;
+	margin-bottom:7px;
+	@include quatro_black;
+	span.location_title {
+		text-transform: uppercase;
+		color:$blue;
+	}
+	a.phone {
+		color:$red;
+		text-decoration: none;
+		margin-left:15px;
+	}
+}
+
+.header_middle {
+	flex-grow: 1;
+	padding-right:32px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	height:100%;
+}
+
+
+.header_right {
+	flex-basis: 255px;
+	flex-shrink: 0;
+	background: $blue;
+}
