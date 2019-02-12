@@ -114,3 +114,51 @@ a.sec_one_button {
 		content:"Click for your free consultation";
 	}
 }
+
+
+@media screen and (max-width: 1450px) {
+	
+	#section_one {
+		height:570px;
+	}
+	
+	
+	.sec_one_inner_content {
+   	padding: 50px 62px 0;
+  }
+  
+  
+  span.sec_one_title {
+	  font-size:50px;
+	  line-height: 55px;
+	  max-width: 640px;
+	  margin-top: 17px;
+	  margin-bottom: 34px;
+	}
+  
+  
+  .play_button_wrapper {
+	  width:97px;
+	  height:97px;
+	  &:after {
+		  width:72px;
+		  height:72px;
+		  top: 11px;
+			left: 11px;
+	  }
+	  &:before {
+		  border-top: 9px solid transparent;
+			border-bottom: 9px solid transparent;
+			border-left: 14px solid #fff;
+			top: 38px;
+			left: 42px;
+	  }
+  }
+  
+  span.video_cta {
+	  font-size:15px;
+  }
+	
+	
+	
+} /* Media Query */

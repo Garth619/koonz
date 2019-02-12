@@ -3,6 +3,8 @@ header {
 	width:100%;
 	height:198px;
 	display: flex;
+	position: relative;
+	z-index:5;
 }
 
 
@@ -10,6 +12,12 @@ header {
 	display: flex;
 	align-items: center;
 	padding-left:55px;
+	a {
+		img {
+			width:231px;
+			height:125px;
+		}
+	}
 }
 
 .phone_wrapper {
@@ -115,6 +123,8 @@ nav {
 	width:100%;
 	background:$grey;
 	height:72px;
+	position: relative;
+	z-index:5;
 	.menu-header {
 		height: 72px;
 	}
@@ -202,3 +212,62 @@ nav {
 		}
 	}
 }
+
+
+@media screen and (max-width: 1450px) {
+	
+	header {
+		height: 176px;
+	}
+	
+	
+	.header_left {
+		padding-left: 37px;
+		a {
+			img {
+				width:197px;
+				height:125px;
+			}
+		}
+	}
+	
+	
+	.header_middle {
+		padding-right: 44px;
+	}
+	
+	
+	.header_right {
+		flex-basis: 219px;
+		a {
+			svg {
+				width:50px;
+				height:50px;
+			}
+		}
+  }
+	
+	
+	.phone_row {
+		font-size:18px;
+		span.location_title {
+			
+		}
+		a.phone {
+			margin-left: 12px;
+		}
+	}
+	
+	
+	a.se_habla {
+   padding-top: 12px;
+	}
+	
+	
+	nav {
+		padding-left:35px;
+		padding-right:35px;
+	}
+	
+	
+} /* Media Query */
