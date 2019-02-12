@@ -241,42 +241,29 @@ jQuery(document).ready(function($){
 --------------------------------------------------------------------------------------- */
 
 
-/*
-$('.sec_three_slider').slick({
+
+$('.selling_points_wrapper').slick({
   infinite: true,
-  slidesToShow: 6,
-  slidesToScroll: 6,
-	arrows:true,
-	prevArrow:".arrow_left",
-	nextArrow:".arrow_right",
+  slidesToShow: 1,
+  slidesToScroll: 1,
+	arrows:false,
+	mobileFirst:true,
 	responsive: [
     {
-      breakpoint: 1450,
+      breakpoint: 768,
       settings: {
-      slidesToShow: 5,
-      slidesToScroll: 5,
+      slidesToShow: 2,
+      slidesToScroll: 2,
      }
    },
    {
-      breakpoint: 1100,
-      settings: {
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      dots:true,
-     }
-   },
-   {
-      breakpoint: 767,
-      settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots:true,
-     }
+      breakpoint: 1230,
+      settings: "unslick"
    }
 	]
  });
  
-*/
+
  
 
 	

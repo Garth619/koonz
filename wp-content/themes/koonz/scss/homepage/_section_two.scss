@@ -3,6 +3,7 @@
 	background: $grey;
 	width:100%;
 	height:2000px;
+	padding-top:1px;
 }
 
 
@@ -15,3 +16,261 @@
 	left:0;
 	clip-path: polygon(0 4%, 100% 53%, 100% 96%, 0 47%);
 }
+
+
+.selling_points_wrapper {
+	display: flex;
+	justify-content: space-between;
+	max-width:1860px;
+	margin:-70px auto 0;
+	position: relative;
+	z-index:1;
+	padding:0 70px;
+}
+
+
+.selling_point_box {
+	flex-basis:23%;
+	text-align: center;
+	box-shadow: 0px 9px 49px 0px rgba(33, 33, 33, 0.31);
+	position: relative;
+	transform: translateY(0);
+	height:582px;
+	transition: transform 500ms cubic-bezier(.17,.66,.34,.98);
+	&:hover {
+		transform: translateY(-45px);
+		.selling_points_hover {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+
+
+.selling_points_reg {
+	background:#fff;
+	border-bottom:3px solid $bluelight;
+	padding:0 20px;
+	height:100%;
+	.svg_wrapper {
+		padding-top:168px;
+		svg {
+
+		}// i.e. 11/modernizr might need widths and heights here
+		span.blue_bg {
+			display: block;
+			width:240px;
+			height:38px;
+			background: $bluelight;
+			margin:-50px auto 0;
+		}
+	}
+	.selling_point_description {
+		text-transform: uppercase;
+		font-size:24px;
+		line-height: 33px;
+		letter-spacing: 0.1em;
+		color:$blue;
+		display: block;
+		padding-top:50px;
+		margin:0 auto;
+		
+		@include quatro_black;
+	}
+}
+
+
+.selling_points_hover {
+	background:$bluelightgrad;
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	border-top:3px solid $red;
+	padding:115px 20px 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 350ms ease-in-out;
+	span.selling_point_hover_description {
+		margin-top:40px;
+		display: block;
+		color:#fff;
+		text-transform: uppercase;
+		font-size:24px;
+		line-height: 33px;
+		letter-spacing: 0.1em;
+		@include quatro_black;
+	}
+	span.selling_point_content {
+		color:#fff;
+		font-size:16px;
+		line-height: 25px;
+		letter-spacing: 0.05em;
+		display: block;
+		margin:18px auto 0;
+		max-width: 315px;
+		@include quatro_medium;
+	}
+}
+
+
+
+@media screen and (max-width: 1615px) {
+	
+	
+.selling_point_box {
+	height:427px;
+	flex-basis: 23.5%;
+}
+	
+	
+.selling_points_reg {
+	.svg_wrapper {
+		padding-top: 126px;
+		svg {
+			height:58px;
+		}
+		span.blue_bg {
+			height:31px;
+			margin: -48px auto 0;
+			width:199px;
+		}
+	}
+	.selling_point_description {
+		font-size:20px;
+		line-height: 27px;
+		padding-top: 44px;
+	}
+}
+
+
+
+
+
+.selling_points_hover {
+	padding: 73px 20px 0;
+	svg {
+		height:58px;
+	}
+	span.selling_point_hover_description {
+		font-size:20px;
+		line-height: 27px;
+		margin-top: 15px;
+	}
+	span.selling_point_content {
+		margin: 14px auto 0;
+	}
+}
+
+
+	
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1370px) {
+	
+	
+	
+	
+.selling_points_reg {
+	.svg_wrapper {
+		
+		svg {
+			
+		}
+		span.blue_bg {
+			
+		}
+	}
+	.selling_point_description {
+		br {
+			display: none;
+		}
+	}
+}
+
+	
+	
+	
+	
+	
+} /* Media Query */
+
+
+
+
+@media screen and (max-width: 1230px) {
+	
+
+
+	
+	.selling_points_wrapper {
+		display: block;
+		.slick-slide {
+    	margin: 0 10px;
+    	
+		}
+		.slick-list {
+    	margin: 0 -10px;
+    	
+  	}
+	}
+	
+	
+	
+	.selling_point_box {
+		margin-bottom:45px;
+		box-shadow: 0px 6px 16px 0px rgba(33,33,33,0.31);
+		&:hover {
+			transform: translateY(0);
+			.selling_points_hover {
+				opacity: 0;
+				visibility: hidden;
+			}
+		}
+	}
+	
+	
+.selling_points_reg {
+	.svg_wrapper {
+		
+		svg {
+			
+		}
+		span.blue_bg {
+			
+		}
+	}
+	.selling_point_description {
+		br {
+			display: inline-block;
+		}
+	}
+}
+
+	
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1066px) {
+	
+	.selling_points_wrapper {
+/*
+		padding-left:60px;
+		padding-right:60px;
+*/
+	}
+	
+	
+	
+} /* Media Query */

@@ -131,7 +131,7 @@ a.sec_one_button {
 	
 	
 	.sec_one_inner_content {
-   	padding: 50px 62px 0;
+   	padding: 50px 70px 0;
   }
   
   
@@ -209,7 +209,7 @@ a.sec_one_button {
 	
 	
 	.sec_one_inner_content {
-    padding: 71px 62px 0;
+    padding: 71px 70px 0;
 	}
 	
 	
@@ -225,6 +225,19 @@ a.sec_one_button {
 	  }
 	 }
 	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	
+	.sec_one_inner_content {
+		padding-left:60px;
+		padding-right:60px;
+	}
 	
 	
 } /* Media Query */
