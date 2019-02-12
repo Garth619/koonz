@@ -66,7 +66,9 @@
 				
 				<div class="phone_row">
 					
-					<span class="location_title">District of Columbia</span><!-- location_title -->
+					<span class="location_title desktop">District of Columbia</span><!-- location_title -->
+					
+					<span class="location_title mobile">D.C.</span><!-- location_title -->
 				
 					<a class="phone" href="tel:2027963291">(202) 796-3291</a><!-- location_title -->
 					
@@ -74,7 +76,9 @@
 				
 				<div class="phone_row">
 					
-					<span class="location_title">Virginia</span><!-- location_title -->
+					<span class="location_title desktop">Virginia</span><!-- location_title -->
+					
+					<span class="location_title mobile">VA</span><!-- location_title -->
 				
 					<a class="phone" href="tel:7034982928">(703) 498-2928</a><!-- location_title -->
 					
@@ -82,7 +86,9 @@
 				
 				<div class="phone_row">
 					
-					<span class="location_title">Maryland</span><!-- location_title -->
+					<span class="location_title desktop">Maryland</span><!-- location_title -->
+					
+					<span class="location_title mobile">MD</span><!-- location_title -->
 				
 					<a class="phone" href="tel:3016374614">(301) 637-4614</a><!-- location_title -->
 					
@@ -92,7 +98,7 @@
 			
 			<a class="se_habla" href="">
 				
-				<span class="se_habla_title">se habla espaÑol </span><!-- se_habla_title -->
+				<span class="se_habla_title dekstop">se habla espaÑol </span><!-- se_habla_title -->
 				
 				<span class="se_habla_line"></span><!-- se_habla_line -->
 			
@@ -112,7 +118,34 @@
 			
 		</div><!-- header_right -->
 		
+		<div class="tablet_header_right">
+			
+			<div class="espanol">
+				
+				<a href="">ES</a>
+			
+			</div><!-- espanol -->
+			
+			<div class="menu_wrapper">
+				
+				<span class="menu_bar"></span><!-- menu_bar -->
+				<span class="menu_bar"></span><!-- menu_bar -->
+				<span class="menu_bar"></span><!-- menu_bar -->
+				
+				<span class="menu_title">Menu</span><!-- menu_title -->
+				
+			</div><!-- menu_wrapper -->
+			
+		</div><!-- tablet_header_right -->
+		
+		
 	</header>
+	
+	<div class="mobile_espanol">
+		
+		<a class="" href="">se habla espaÑol</a>
+		
+	</div><!-- mobile_espanol -->
 	
 	<nav>
 		

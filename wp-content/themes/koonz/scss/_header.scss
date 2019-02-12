@@ -35,6 +35,9 @@ header {
 		text-transform: uppercase;
 		color:$blue;
 	}
+	span.location_title.mobile {
+		display: none;
+	}
 	a.phone {
 		color:$red;
 		text-decoration: none;
@@ -116,6 +119,11 @@ a.se_habla {
 			}
 		}
 	}
+}
+
+
+.tablet_header_right {
+	display: none;
 }
 
 
@@ -213,6 +221,10 @@ nav {
 	}
 }
 
+.mobile_espanol {
+	display: none;
+}
+
 
 @media screen and (max-width: 1450px) {
 	
@@ -268,6 +280,193 @@ nav {
 		padding-left:35px;
 		padding-right:35px;
 	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1175px) {
+	
+	
+	header {
+		height: 123px;
+	}
+	
+	.header_left {
+		padding-left: 30px;
+		a {
+			img {
+				width:150px;
+				height: 93px;
+			}
+		}
+	}
+	
+	.header_middle {
+		padding-right: 29px;
+	}
+	
+	.header_right {
+		display: none;
+	}
+	
+	.tablet_header_right {
+		display: flex;
+	}
+
+	.espanol {
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height:100%;
+			background: $grey;
+			color:$bluelight;
+			font-size:16px;
+			text-transform: uppercase;
+			letter-spacing: 0.2em;
+			text-decoration: none;
+			width: 60px;
+			@include quatro_black;
+		}
+	}
+	
+	
+	.menu_wrapper {
+		height:100%;
+		width:83px;
+		background: $blue;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding:0 20px;
+		span {
+			display: block;
+		}
+		span.menu_bar {
+			width:100%;
+			height:3px;
+			background: $red;
+			margin-bottom:7px;
+		}
+		span.menu_title {
+			color:#fff;
+			text-transform: uppercase;
+			font-size:13px;
+			letter-spacing: 0.05em;
+			padding-top:1px;
+			@include quatro_slab_bold;
+		}
+	}
+	
+	
+	
+	.phone_row {
+		font-size:16px;
+		letter-spacing: 0.05em;
+		a.phone {
+			margin-left: 7px;
+		}
+	}
+	
+	a.se_habla {
+		display: none;
+	}
+	
+	nav {
+		display: none;
+	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	header {
+		height: 77px;
+	}
+	
+	.header_left {
+		padding-left:19px;
+		a {
+			img {
+				width:109px;
+				height: 64px;
+			}
+		}
+	}
+	
+	
+	.phone_row {
+		font-size:12px;
+		margin-bottom: 4px;
+		&:last-of-type {
+			margin-bottom:0;
+		}
+		span.location_title.desktop {
+			display: none;
+		}
+		span.location_title.mobile {
+			display: inline-block;
+		}
+		span.location_title {
+			
+		}
+		a.phone {
+		
+		}
+	}
+	
+	
+	.espanol {
+		a {
+			display: none;
+		}
+	}
+	
+	.menu_wrapper {
+		width:58px;
+		padding-left:15px;
+		padding-right:15px;
+		span.menu_title {
+			display: none;
+		}
+	}
+
+	.mobile_espanol {
+		display: block;
+		width:100%;
+		a {
+			display: block;
+			background: $grey;
+			color:$bluelight;
+			text-transform: uppercase;
+			font-size:12px;
+			letter-spacing: 0.2em;
+			text-decoration: none;
+			text-align: center;
+			padding:10px 5px;
+			@include quatro_black;
+		}
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 355px) {
+	
+	
+	.header_middle {
+		padding-right: 16px;
+	}
+	
+	
+	
 	
 	
 } /* Media Query */
