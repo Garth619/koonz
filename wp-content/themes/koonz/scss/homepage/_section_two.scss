@@ -1,0 +1,17 @@
+#section_two {
+	position: relative;
+	background: $grey;
+	width:100%;
+	height:2000px;
+}
+
+
+.angled_box {
+	width:100%;
+	height:1840px;
+	background: url(#{$themePath}images/bg-pattern.jpg);
+	position: absolute;
+	top:0;
+	left:0;
+	clip-path: polygon(0 4%, 100% 53%, 100% 96%, 0 47%);
+}
