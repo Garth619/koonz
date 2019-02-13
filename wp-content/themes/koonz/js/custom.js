@@ -5,7 +5,11 @@
 
 jQuery(document).ready(function($){
 	
-
+		
+		
+	var windowWidth = $(window).width();
+		
+		
 	
 	 /* Modernizr - check if browser supports webp for section_one. 
      --------------------------------------------------------------------------------------- */
@@ -248,6 +252,7 @@ $('.selling_points_wrapper').slick({
   slidesToScroll: 1,
 	arrows:false,
 	mobileFirst:true,
+	dots:true,
 	responsive: [
     {
       breakpoint: 768,
@@ -264,7 +269,29 @@ $('.selling_points_wrapper').slick({
  });
  
 
+ 	
+
  
+ 
+ 
+ 	function sellingpoints() {
+     
+    if (windowWidth <= 1230) {
+         
+       $('.selling_point_box').on('click', function(e) {
+     		  
+			 		//$('.selling_point_box').removeClass('open');
+     			
+			 		$(this).toggleClass('open');
+     		
+     	 });
+     	   		
+    } 
+     
+  };
+ 	
+ 
+ sellingpoints();
 
 	
 
@@ -273,6 +300,10 @@ $('.selling_points_wrapper').slick({
 
 
 $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
+
+
+
+
 
 
   
