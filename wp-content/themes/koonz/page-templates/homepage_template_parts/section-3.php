@@ -2,9 +2,23 @@
 	
 	<div class="sec_image_wrapper">
 		
-		<img src="<?php bloginfo('template_directory');?>/images/content01_img_01.jpg"/>
-		<img src="<?php bloginfo('template_directory');?>/images/content01_img_02.jpg"/>
-		<img src="<?php bloginfo('template_directory');?>/images/content01_img_03.jpg"/>
+		<div>
+			
+			<img src="<?php bloginfo('template_directory');?>/images/content01_img_01.jpg"/>
+		
+		</div>
+		
+		<div>
+			
+			<img src="<?php bloginfo('template_directory');?>/images/content01_img_02.jpg"/>
+		
+		</div>
+		
+		<div>
+			
+			<img src="<?php bloginfo('template_directory');?>/images/content01_img_03.jpg"/>
+		
+		</div>
 		
 	</div><!-- sec_image_wrapper -->
 	
