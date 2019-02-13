@@ -118,6 +118,17 @@ img.aligncenter {
 	max-width:100%;
 	height:auto;
 }
+
+
+
+.content {
+	line-height: 30px;
+	p,ul,ol {
+		margin-bottom:28px;
+	}
+}
+
+
 	
 	a.button {
 		padding:20px 55px;
@@ -128,3 +139,6 @@ img.aligncenter {
 	
 	
 } /* Media Query */
+
+
+

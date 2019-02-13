@@ -138,7 +138,7 @@
 			
 			<div class="sec_two_sidebar">
 				
-				<span class="sec_two_sidebar_title">Let our attorneys fight for you</span><!-- sec_two_sidebar_title -->
+				<span class="sec_two_sidebar_title">Let our attorneys<br/> fight for you</span><!-- sec_two_sidebar_title -->
 				
 				<ul>
 					<li>

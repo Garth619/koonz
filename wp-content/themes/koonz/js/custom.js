@@ -255,7 +255,7 @@ $('.selling_points_wrapper').slick({
 	dots:true,
 	responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 767,
       settings: {
       slidesToShow: 2,
       slidesToScroll: 2,
