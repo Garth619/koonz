@@ -1,0 +1,59 @@
+#section_three {
+	position: relative;
+	z-index: 1;
+	padding:0 50px 160px;
+}
+
+
+
+.sec_image_wrapper {
+	max-width:1925px;
+	margin:-170px auto 0;
+	display: flex;
+	justify-content: space-between;
+	img {
+		max-width:100%;
+		height:auto;
+		display: block;
+		box-shadow: 0px 9px 49px 0px rgba(33, 33, 33, 0.5);
+	}
+}
+
+
+.sec_three_content {
+	text-align: center;
+	margin:105px auto 0;
+	max-width:1120px;
+	svg {
+		display: block;
+		margin:0 auto;
+	 .content_01-st1{
+		 fill:$red
+		}
+	}
+	span.sec_three_title {
+		text-transform: uppercase;
+		color:$bluelight;
+		font-size:17px;
+		line-height: 30px;
+		letter-spacing: 0.2em;
+		display: inline-block;
+		margin:49px 0 35px;
+		@include quatro_black;
+		&:before {
+			content:"";
+			display: block;
+			width:675px;
+			height:4px;
+			margin:0 auto;
+			background: $bluegrad;
+			margin-bottom:51px;
+		}
+	}
+}
+
+
+
+
+
+
