@@ -290,13 +290,22 @@ $('.selling_points_wrapper').slick({
    }
 	]
  });
+ 
+ 
+ 
+ $('.sec_five_slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+	arrows:true,
+	fade:true,
+	prevArrow:".sec_five_button_left",
+	nextArrow:".sec_five_button_right",
+	dots:false
+ });
 
  
 
- 	
-
- 
- 
  
  	function sellingpoints() {
      
