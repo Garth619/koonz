@@ -268,6 +268,30 @@ $('.selling_points_wrapper').slick({
 	]
  });
  
+ 
+ 
+ 
+ 
+ $('.sec_four_slider').slick({
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+	arrows:true,
+	prevArrow:".sec_four_button_left",
+	nextArrow:".sec_four_button_right",
+	dots:false,
+	responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+     }
+   }
+	]
+ });
+
+ 
 
  	
 

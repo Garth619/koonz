@@ -1,7 +1,7 @@
 #section_four {
 	width:100%;
-	height:3000px;
 	background:$blue;
+	padding-bottom:125px;
 }
 
 
@@ -9,14 +9,14 @@
 	display: flex;
 	max-width:1725px;
 	margin:0 auto;
-	padding-top: 145px;
+	padding-top: 100px;
 }
 
 
 .sec_four_left {
-	flex-basis:515px;
+	width:515px;
 	flex-shrink:0;
-	padding-top:10px;
+	padding-top:55px;
 	span.sec_four_title {
 		display: block;
 		width:100%;
@@ -53,7 +53,7 @@ a.view_all_button.sec_four_button {
 }
 
 .sec_four_right {
-	flex-grow:1;
+	width:calc(100% - 515px);
 	padding-left:9%;
 }
 
@@ -63,11 +63,18 @@ a.view_all_button.sec_four_button {
 }
 
 .sec_four_slider {
-	
+	width:100%;
+	.slick-slide {
+    margin: 0 15px;
+  }
+  .slick-list {
+    margin: 0 -15px;
+    padding: 36px 0;
+  }
 }
 
 .sec_four_slide {
-	box-shadow: 0px 9px 49px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 6px 23px 0px rgba(0, 0, 0, 0.5);
 	background:$blue;
 	height:513px;
 	position: relative;
@@ -162,5 +169,69 @@ a.view_all_button.sec_four_button {
 	}
 }
 
-  
+ 
+.sec_four_button_wrapper {
+	display: flex;
+	max-width:290px;
+	float:right;
+	.sec_four_button {
+		display: flex;
+		cursor: pointer;
+		&:hover {
+			span {
+				color:$red;
+			}
+			svg {
+				rect {
+					fill:$red;
+				}
+			}
+		}
+		span {
+			color:#fff;
+			text-transform: uppercase;
+			font-size:17px;
+			display: inline-block;
+			letter-spacing: 0.2em;
+			transition: all 200ms ease-in-out;
+			@include quatro_bold;
+		}
+		svg {
+			position: relative;
+			top:2px;
+			display: inline-block;
+			rect {
+				fill:#fff;
+				transition: all 200ms ease-in-out;
+			}
+		}
+	}
+	.sec_four_button_left {
+		margin-right:27px;
+		svg {
+			margin-right:10px;
+		}
+	}
+	.sec_four_button_right {
+		position: relative;
+		span {
+			margin-left:35px;
+			margin-right:15px;
+		}
+		svg {
+			transform: rotate(180deg);
+		}
+		&:before {
+			content:"";
+			display: block;
+			width:3px;
+			height:15px;
+			background:#fff;
+			position: absolute;
+			top:4px;
+			left:0;
+		
+		}
+	}
+}
   
