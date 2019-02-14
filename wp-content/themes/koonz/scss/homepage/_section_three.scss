@@ -125,7 +125,7 @@
 	
 	
 	.sec_three_content {
-		padding:0 20px;
+		padding:0px;
 		text-align: left;
 		margin: 73px auto 0;
 		span.sec_three_title {
@@ -146,6 +146,7 @@
 @media screen and (max-width: 767px) {
 	
 	
+	
 	#section_three {
 		padding-left:20px;
 		padding-right:20px;
@@ -154,6 +155,10 @@
 	
 	.sec_image_wrapper {
 		 margin: -99px auto 0;
+	}
+	
+	.sec_three_content {
+		padding:0 20px;
 	}
 	
 		

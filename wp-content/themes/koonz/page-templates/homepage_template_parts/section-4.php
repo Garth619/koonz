@@ -8,7 +8,7 @@
 			
 			<span class="sec_four_intro">We are committed to each and every client who retains us, regardless of their cases' size.</span><!-- sec_four_intro -->
 			
-			<a class="view_all_button sec_four_button" href="">View All results</a>
+			<a class="view_all_button sec_four_button desktop" href="">View All results</a>
 			
 		</div><!-- sec_four_left -->
 		
@@ -27,7 +27,7 @@
 							
 							<span class="sec_four_amount">$9.3 M</span><!-- sec_four_amount -->
 							
-							<span class="sec_four_description">d.c. pedestrian struck by a vehicle</span><!-- sec_four_description -->
+							<span class="sec_four_description">d.c. pedestrian struck by a vehicle</span><!-- sec_four_description -->
 							
 							<span class="plus_sign">+</span><!-- plus_sign -->
 							
@@ -55,7 +55,7 @@
 							
 							<span class="sec_four_amount">$9.3 M</span><!-- sec_four_amount -->
 							
-							<span class="sec_four_description">d.c. pedestrian struck by a vehicle</span><!-- sec_four_description -->
+							<span class="sec_four_description">d.c. pedestrian struck by a vehicle</span><!-- sec_four_description -->
 							
 							<span class="plus_sign">+</span><!-- plus_sign -->
 							
@@ -83,7 +83,7 @@
 							
 							<span class="sec_four_amount">$9.3 M</span><!-- sec_four_amount -->
 							
-							<span class="sec_four_description">d.c. pedestrian struck by a vehicle</span><!-- sec_four_description -->
+							<span class="sec_four_description">d.c. pedestrian struck by a vehicle</span><!-- sec_four_description -->
 							
 							<span class="plus_sign">+</span><!-- plus_sign -->
 							
@@ -111,7 +111,7 @@
 							
 							<span class="sec_four_amount">$9.3 M</span><!-- sec_four_amount -->
 							
-							<span class="sec_four_description">d.c. pedestrian struck by a vehicle</span><!-- sec_four_description -->
+							<span class="sec_four_description">d.c. pedestrian struck by a vehicle</span><!-- sec_four_description -->
 							
 							<span class="plus_sign">+</span><!-- plus_sign -->
 							
@@ -139,7 +139,7 @@
 							
 							<span class="sec_four_amount">$9.3 M</span><!-- sec_four_amount -->
 							
-							<span class="sec_four_description">d.c. pedestrian struck by a vehicle</span><!-- sec_four_description -->
+							<span class="sec_four_description">d.c. pedestrian struck by a vehicle</span><!-- sec_four_description -->
 							
 							<span class="plus_sign">+</span><!-- plus_sign -->
 							
@@ -167,7 +167,7 @@
 							
 							<span class="sec_four_amount">$9.3 M</span><!-- sec_four_amount -->
 							
-							<span class="sec_four_description">d.c. pedestrian struck by a vehicle</span><!-- sec_four_description -->
+							<span class="sec_four_description">d.c. pedestrian struck by a vehicle</span><!-- sec_four_description -->
 							
 							<span class="plus_sign">+</span><!-- plus_sign -->
 							
@@ -210,6 +210,8 @@
 				</div><!-- sec_four_button_wrapper -->
 				
 			</div><!-- sec_four_slider_wrapper -->
+			
+			<a class="view_all_button sec_four_button mobile" href="">View All results</a>
 			
 		</div><!-- sec_four_right -->
 		
