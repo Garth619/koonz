@@ -158,15 +158,7 @@ nav {
 		height:100%;
 		> li.menu-item-has-children {
 				position: relative;
-				&:hover {
-					> a {
-						color:$red;
-					}
-					ul.sub-menu {
-						opacity: 1;
-						visibility: visible;
-					}
-				}
+				
 				> a {
 						&:after {
 							content:"";
@@ -186,12 +178,7 @@ nav {
 				height:100%;
 				display: flex;
 				align-items: center;
-				> a {
-						&:hover {
-							color:$red;
-						}
 				}
-		}
 	}
 	ul.sub-menu {
 		position: absolute;
@@ -213,13 +200,44 @@ nav {
 				padding:35px 50px;
 				border-bottom: 1px solid $grey;
 				transition: all 200ms ease-in-out;
-				&:hover {
-					color:$red;
-				}
 			}
 		}
 	}
 }
+
+
+
+nav.desktop_hover {
+	ul.menu {
+		> li.menu-item-has-children {
+				&:hover {
+					> a {
+							color:$red;
+						}
+						ul.sub-menu {
+							opacity: 1;
+							visibility: visible;
+						}
+					}
+				}
+		> li {
+			> a {
+					&:hover {
+						color:$red;
+					}
+				}
+			}
+		}
+		ul.sub-menu {
+			li {
+				a {
+					&:hover {
+						color:$red;
+					}
+				}
+			}
+		}
+	}
 
 .mobile_espanol {
 	display: none;
@@ -375,7 +393,31 @@ nav {
 	}
 	
 	nav {
-		display: none;
+		position: fixed;
+		top:0;
+		left:0;
+		width:100%;
+		height:100vh;
+		background: $blue;
+		.menu-header {
+			height:auto;
+			ul {
+				li {
+					a {
+						color:#fff;
+					}
+				}
+			}
+			ul.menu {
+				display: block;
+				> li {
+					display: block;
+					> a {
+						
+					}
+				}
+			}
+		}
 	}
 	
 	

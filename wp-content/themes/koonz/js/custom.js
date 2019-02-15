@@ -355,8 +355,25 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 
 
 
+/* Nav
+--------------------------------------------------------------------------------------- */
 
 
+
+	
+
+function myNav() {
+     
+    if (windowWidth >= 1175) {
+	    
+	  	$('nav').addClass('desktop_hover');
+	  
+	  }
+
+};
+ 	
+ 
+ myNav();
 
   
 }); // document ready
