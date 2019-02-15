@@ -13,6 +13,14 @@
 			<div class="form_wrapper">
 			
 				<?php gravity_form(1, false, false, false, '', true, 12); ?>
+				
+				<span class="required">
+				
+					<span class="asterisk">*</span>
+					
+					required
+				
+				</span><!-- required -->
 			
 			</div><!-- form_wrapper -->
 		
