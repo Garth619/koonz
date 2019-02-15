@@ -7,7 +7,28 @@ footer {
 .footer_inner {
 	padding-top:1px;
 	padding-bottom:100px;
+	position: relative;
+	overflow: hidden;
 }
+
+.footer_inner_content {
+	position: relative;
+	z-index:1;
+}
+
+
+
+
+.footer_angled_box {
+	width:100%;
+	height:1840px;
+	background: url(#{$themePath}images/bg-pattern.jpg);
+	position: absolute;
+	top:0;
+	left:0;
+	clip-path: polygon(100% 0, 100% 60%, 61% 100%, 0 100%);
+}
+
 
 
 span.footer_title {
@@ -113,6 +134,112 @@ span.footer_intro {
 		margin-top:7px;
 		margin-left:18px;
 		@include quatro_bold;
+	}
+}
+
+
+.footer_location {
+	width:100%;
+	background: $blue;
+	padding-left:70px;
+	padding-right:70px;
+}
+
+.footer_location_inner {
+	max-width:1580px;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.single_location {
+	position: relative;
+	flex-basis:315px;
+	text-align: center;
+	height:635px;
+	.locaton_svg {
+		position: absolute;
+		left:0;
+		width:100%;
+		text-align: center;
+		svg {
+			display: block;
+			margin:0 auto;
+		}
+	}
+	.locaton_svg.one {
+		top:92px;
+		svg {
+			width:65px;
+			height:80px;
+		}
+	}
+	.locaton_svg.two {
+		top:97px;
+		svg {
+			width:70px;
+			height:67px;
+		}
+	}
+	.locaton_svg.three {
+		top:104px;
+		svg {
+			width:83px;
+			height:62px;
+		}
+	}
+	span.location_title {
+		color:$bluelight;
+		text-transform: uppercase;
+		font-size: 18px;
+		letter-spacing: 0.2em;
+		display: block;
+		padding:210px 0 0;
+		@include quatro_black;
+		&:after {
+			content:"";
+			display: block;
+			width:140px;
+			height:3px;
+			background: $red;
+			margin:28px auto 0;
+		}
+	}
+	span.address {
+		color:#fff;
+		font-size:22px;
+		line-height: 30px;
+		display: block;
+		margin:23px auto 0;
+		max-width: 300px;
+		@include quatro_medium;
+	}
+	a.get_directions {
+		background: #fff;
+		color:$red;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 16px;
+		letter-spacing: 0.2em;
+		display: inline-block;
+		padding:11px 27px;
+		margin-top:32px;
+		transition: all 200ms ease-in-out;
+		@include quatro_black;
+		&:hover {
+			background: $bluelight;
+			color:#fff;
+		}
+	}
+	a.footer_phone {
+		display: block;
+		text-decoration: none;
+		color:#fff;
+		font-size: 30px;
+		letter-spacing: 0.04em;
+		margin-top:37px;
+		@include quatro_black;
 	}
 }
 
