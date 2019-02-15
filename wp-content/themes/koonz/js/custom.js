@@ -303,6 +303,25 @@ $('.selling_points_wrapper').slick({
 	nextArrow:".sec_five_button_right",
 	dots:false
  });
+ 
+ 
+ 
+ $('.footer_location_inner').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+	arrows:false,
+	mobileFirst:true,
+	dots:true,
+	fade:true,
+	responsive: [
+    {
+      breakpoint: 1066,
+      settings: "unslick",
+     }
+	]
+ });
+
 
  
 

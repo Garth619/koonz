@@ -2,13 +2,13 @@
 	
 	<div class="footer_inner">
 		
-		<div class="footer_inner_content">
+		<div class="footer_angled_box"></div><!-- angled_box -->
 		
-			<div class="footer_angled_box"></div><!-- angled_box -->
+		<div class="footer_inner_content">
 		
 			<span class="footer_title">request your<br/> free consultation</span>
 		
-			<span class="footer_intro">We do not charge for an initial consultation and collects no fees unless compensation is recovered for you. </span><!-- footer_intro -->
+			<span class="footer_intro">We do not charge for an initial consultation and collects no fees unless compensation is recovered for you. </span><!-- footer_intro -->
 		
 			<div class="form_wrapper">
 			
@@ -18,7 +18,7 @@
 				
 					<span class="asterisk">*</span>
 					
-					required
+					required field
 				
 				</span><!-- required -->
 			
