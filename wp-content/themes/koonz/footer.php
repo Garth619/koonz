@@ -82,6 +82,63 @@
 		
 	</div><!-- footer_location -->
 	
+	<div class="copyright_wrapper">
+		
+		<div class="copyright_inner">
+			
+			<div class="copyright_left">
+				
+				<ul>
+					<li>&copy; <?php echo date("Y"); ?> Koonz, McKenney, Johnson, DePaolis & Lightfoot, L.L.P.</li>
+					<li><a href="">Private Policy</a></li>
+					<li><a href="">Sitemap</a></li>
+					<li><a href="">Disclaimer</a></li>
+				</ul>
+				
+			</div><!-- copyright_left -->
+			
+			<div class="copyright_right">
+				
+				<div class="social_media">
+					
+					<a class="fb" href="" target="_blank" rel="noopener">
+						
+						<?php echo file_get_contents("wp-content/themes/koonz/images/footer_logo-01.svg"); ?>
+						
+					</a>
+					
+					<a class="yt" href="" target="_blank" rel="noopener">
+						
+						<?php echo file_get_contents("wp-content/themes/koonz/images/footer_logo-02.svg"); ?>
+						
+					</a>
+					
+					<a class="twitter" href="" target="_blank" rel="noopener">
+						
+						<?php echo file_get_contents("wp-content/themes/koonz/images/footer_logo-03.svg"); ?>
+						
+					</a>
+					
+					<a class="linkedin" href="" target="_blank" rel="noopener">
+						
+						<?php echo file_get_contents("wp-content/themes/koonz/images/footer_logo-04.svg"); ?>
+						
+					</a>
+					
+				</div><!-- social_media -->
+				
+				<a class="ilawyer" href="" target="_blank" rel="noopener">
+					
+					<?php echo file_get_contents("wp-content/themes/koonz/images/footer_logo-05.svg"); ?>
+					
+				</a><!-- ilawyer -->
+				
+			</div><!-- copyright_right -->
+			
+		</div><!-- copyright_inner -->
+		
+	</div><!-- copyright_wrapper 0-->
+	
 </footer>
 
 <?php wp_footer();?>
