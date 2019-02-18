@@ -415,6 +415,31 @@ function myNav() {
  	
  
  myNav();
+ 
+ 
+ // sidebar
+ 
+ 
+ 
+ $('.sidebar ul > li > a').on('click', function(e) {
+   
+   $(this).toggleClass('active');
+   
+   $(this).next('ul.sub-menu').slideToggle(300);
+   
+   $(this).parent('li').toggleClass('no_border');
+   
+ });
+ 
+ 
+
+ $(".sidebar ul.menu > li.current-menu-ancestor > a").toggleClass('active');
+   
+ 
+ 
+ 
+ 
+ 
 
   
 }); // document ready

@@ -71,6 +71,106 @@
 .sidebar_wrapper {
 	flex-basis:445px;
 	flex-shrink:0;
-	height:500px;
-	background:red;
+	.sidebar {
+		box-shadow: 0px 9px 49px 0px rgba(33, 33, 33, 0.31);
+		padding:46px 50px 40px;
+		span.sidebar_title {
+			display: block;
+			color:$bluelight;
+			font-size:30px;
+			letter-spacing: 0.04em;
+			@include quatro_slab_bold;
+			&:after {
+				content:"";
+				display: block;
+				width:100%;
+				height:4px;
+				background: $bluelight;
+				margin-top:35px;
+			}
+		}
+		ul {
+			list-style: none;
+			
+			li {
+				text-transform: uppercase;
+				font-size:16px;
+				letter-spacing: 0.15em;
+				line-height: 18px;
+				@include quatro_bold;
+				a {
+					display: block;
+					cursor: pointer;
+					
+				}
+			}
+		}
+		ul.menu {
+			margin:30px 0 0;
+			> li.menu-item-has-children {
+					> a {
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+							&:after {
+								content:"+";
+								
+							}
+					}
+					> a.active {
+							&:after {
+								content:"-";
+							}
+					}
+			}
+			> li.no_border {
+				border-bottom:1px solid transparent;
+			}
+			> li.current-menu-ancestor {
+				ul.sub-menu {
+					display: block;
+				}
+			}
+			> li {
+				border-bottom:1px solid $grey;
+				transition: all 200ms ease-in-out;
+				&:last-of-type {
+					border:none;
+				}
+					> a {
+						color:$blue;
+						padding:15px 0;
+						transition: all 200ms ease-in-out;
+						&:hover {
+							color:$red;
+						}
+					}
+					> a.active {
+							color:$red;
+					}
+			}
+		}
+		ul.sub-menu {
+			display: none;
+			padding:5px 0 5px;
+			li {
+				a {
+					color:$bluelight;
+					display: block;
+					padding:15px 0;
+					text-decoration: none;
+					transition: all 200ms ease-in-out;
+					&:hover {
+						color:$red;
+					}
+				}
+			}
+			li.current-menu-item {
+				a {
+					color:$red;
+				}
+			}
+		}
+	}
 }
+
