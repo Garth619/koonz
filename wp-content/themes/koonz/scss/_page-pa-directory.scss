@@ -1,0 +1,134 @@
+
+.pa_directory {
+	max-width:1440px;
+	margin:120px auto 0;
+	ul {
+		list-style: none;
+		li {
+			a {
+				
+			}
+		}
+	}
+	ul.menu {
+		> li {
+				&:last-of-type {
+					ul.sub-menu {
+						padding-bottom:0;
+					}
+				}
+		}
+		> li {
+				> a {
+						color:$red;
+						text-transform: uppercase;
+						font-size:19px;
+						letter-spacing: 0.1em;
+						display: block;
+						@include quatro_bold;
+						&:after {
+							content:"";
+							display: block;
+							width:100%;
+							height:4px;
+							background: $bluegrad;
+							margin-top:28px;
+						}
+				}
+			}
+		}
+		ul.sub-menu {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding:20px 0 112px;
+			&:after {
+				content:"";
+				flex-basis:26%;
+			}
+			li {
+				font-size:17px;
+				line-height: 21px;
+				letter-spacing: 0.02em;
+				display: flex;
+				align-items: center;
+				height:93px;
+				border-bottom:2px solid $grey;
+				flex-basis:26%;
+				a {
+					text-decoration: none;
+					color:$blue;
+					display: block;
+					flex-basis: 100%;
+					transition: all 200ms ease-in-out;
+					@include quatro_slab_bold;
+					&:hover {
+						color:$bluelight;
+					}
+				}
+			}
+			li:nth-child(3n+1):nth-last-child(-n+3),
+			li:nth-child(3n+1):nth-last-child(-n+3) ~ li {
+				border:none;
+			}
+		}
+	}
+	
+	
+	@media screen and (max-width: 1066px) {
+		
+		
+		.pa_directory {
+			margin: 72px auto 0;
+			&:after {
+				display: none;
+			}
+			ul.sub-menu {
+				li {
+					flex-basis:43%;	
+				}
+				li:nth-child(3n+1):nth-last-child(-n+3),
+				li:nth-child(3n+1):nth-last-child(-n+3) ~ li {
+					border-bottom:2px solid $grey;
+				}
+				li:nth-child(2n+1):nth-last-child(-n+2),
+				li:nth-child(2n+1):nth-last-child(-n+2) ~ li {
+					border:none;
+				}
+			}
+		}
+		
+		
+	} /* Media Query */
+	
+	
+	
+	@media screen and (max-width: 767px) {
+		
+		
+		
+		.pa_directory {
+			padding-bottom: 40px;
+			&:after {
+				
+			}
+			ul.sub-menu {
+				display: block;
+				padding: 20px 0 72px;
+				li {
+					height:auto;
+					padding:25px 0;
+				}
+				li:nth-child(3n+1):nth-last-child(-n+3),
+				li:nth-child(3n+1):nth-last-child(-n+3) ~ li {
+					border-bottom:2px solid $grey;
+				}
+				li:nth-child(2n+1):nth-last-child(-n+2),
+				li:nth-child(2n+1):nth-last-child(-n+2) ~ li {
+					border-bottom:2px solid $grey;
+				}
+			}
+		}
+		
+		
+	} /* Media Query */

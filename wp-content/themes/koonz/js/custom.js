@@ -196,23 +196,7 @@ jQuery(document).ready(function($){
 
 		
 		
-		 /* Wistia - Call function when script needs to be loaded either by hover or waypoints
-     --------------------------------------------------------------------------------------- */
-
-    function wistiaLoad() {
-      jQuery.getScript('https://fast.wistia.com/assets/external/E-v1.js', function(data, textStatus, jqxhr) {
-        console.log('wistia load:', textStatus); // Success
-      });
-    }
-
-    // examples:
-
-    // jQuery(".banner-box-1").one("mouseenter", function(e){
-    //   wistiaLoad();
-    // });
-
-    // createWaypoint('section-1', null, null, '100%', wistiaLoad, false)
-
+		
 
 		
 		/* Live Chat - Call function when script needs to be loaded either by hover, click or waypoints

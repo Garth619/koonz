@@ -77,7 +77,14 @@ h1,h2,h3,h4 {
 	  }
   }
   
-  
+  h1.internal_header {
+		font-size:60px;
+		line-height: 70px;
+		color:$blue;
+		margin-bottom: 33px;
+		text-align: center;
+		@include quatro_slab_bold_italic;
+  }
   
   .content {
 	  color:$black;
@@ -225,7 +232,10 @@ h1,h2,h3,h4 {
  
 @media screen and (max-width: 1066px) {
 	
-	
+	h1.internal_header {
+		font-size:50px;
+		line-height: 62px;
+  }
 	
 	.content {
 		h1.page_title {
@@ -254,6 +264,11 @@ img.aligncenter {
 	height:auto;
 }
 
+
+h1.internal_header {
+	font-size: 39px;
+	line-height: 45px;
+}
 
 
 .content {
