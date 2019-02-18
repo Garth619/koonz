@@ -369,6 +369,47 @@ function myNav() {
 	  	$('nav').addClass('desktop_hover');
 	  
 	  }
+	  
+	  else {
+		  
+		  
+		  $('.menu_wrapper').on('click', function(e) {
+		    
+		  	$('nav').slideDown(400);
+		  	
+		  	$('nav .mobile_close').addClass('active');
+		  
+		  });
+		  
+		  
+		  $('nav ul.menu > li.menu-item-has-children > a').on('click', function(e) {
+			  
+			  $('.mobile_sub_nav').fadeIn(300);
+			  
+			  $('.mobile_sub_nav_list').empty();
+			  
+			  $(this).next('ul.sub-menu').clone(true).appendTo('.mobile_sub_nav_list');
+		    
+		  });
+		  
+		  
+		  $('nav .mobile_close').on('click', function(e) {
+		    
+		  	$('nav').slideUp(400);
+		  	
+		  	$(this).removeClass('active');
+		  
+		  });
+		  
+		  
+		  $('.mobile_back, .mobile_sub_nav .mobile_close').on('click', function(e) {
+			  
+			  $('.mobile_sub_nav').fadeOut(300);
+		    
+		  });
+		  
+		  
+	  }
 
 };
  	

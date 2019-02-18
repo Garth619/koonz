@@ -149,9 +149,27 @@
 	
 	<nav>
 		
+		<div class="mobile_close"></div><!-- mobile_close -->
+		
 		<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
 		
 	</nav>
+	
+	<div class="mobile_sub_nav">
+		
+		<div class="mobile_back">
+			
+			<?php echo file_get_contents("wp-content/themes/koonz/images/arrow.svg"); ?>
+			
+			<span>Back</span>
+			
+		</div><!-- mobile_back -->
+		
+		<div class="mobile_close"></div><!-- mobile_close -->
+		
+		<div class="mobile_sub_nav_list"></div><!-- mobile_sub_nav_list -->
+		
+	</div><!-- mobile_sub_nav -->
 				
 
 
