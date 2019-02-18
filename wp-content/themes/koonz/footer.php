@@ -4,7 +4,7 @@
 		
 		<div class="footer_angled_box"></div><!-- angled_box -->
 		
-		<div class="footer_inner_content">
+		<div id="consultation" class="footer_inner_content">
 		
 			<span class="footer_title">request your<br/> free consultation</span>
 		

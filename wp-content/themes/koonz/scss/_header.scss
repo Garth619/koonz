@@ -8,6 +8,13 @@ header {
 }
 
 
+body:not(.page-template-template-home) {
+	header {
+		background: url(#{$themePath}images/bg-pattern.jpg) top left repeat;
+	}
+}
+
+
 .header_left {
 	display: flex;
 	align-items: center;
