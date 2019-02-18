@@ -221,6 +221,22 @@ h1,h2,h3,h4 {
 	 
 	 
  } /* Media Query */
+ 
+ 
+@media screen and (max-width: 1066px) {
+	
+	
+	
+	.content {
+		h1.page_title {
+			font-size:50px;
+			line-height: 62px;
+		}
+	}
+	
+	
+	
+} /* Media Query */
 
 
 @media screen and (max-width: 767px) {
@@ -242,6 +258,10 @@ img.aligncenter {
 
 .content {
 	line-height: 30px;
+	h1.page_title {
+		font-size: 39px;
+		line-height: 45px;
+	}
 	p,ul,ol {
 		margin-bottom:28px;
 	}
