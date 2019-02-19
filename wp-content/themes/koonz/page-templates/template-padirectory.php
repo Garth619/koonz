@@ -9,7 +9,7 @@ get_header(); ?>
 	
 <?php get_template_part('page-templates/internal','banner');?>
 
-<div class="outer_container">
+	<div class="outer_container">
 	
 		<h1 class="internal_header"><?php the_title();?></h1><!-- page_title -->
 	
@@ -18,6 +18,8 @@ get_header(); ?>
 			<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'pa_menu' ) ); ?>
 		
 		</div><!-- pa_directory -->
+
+	</div><!-- outer_container -->
 		
 </div><!-- internal_main -->
 

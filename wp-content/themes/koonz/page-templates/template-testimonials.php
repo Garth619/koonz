@@ -64,6 +64,8 @@ get_header(); ?>
 		
 		</div><!-- testimonials_wrapper -->
 		
+	</div><!-- outer_container -->
+		
 </div><!-- internal_main -->
 
 

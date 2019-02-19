@@ -1,0 +1,53 @@
+.att_col {
+	max-width:1535px;
+	margin:0 auto;
+	display: flex;
+	
+}
+
+
+.att_sidebar_wrapper {
+	flex-basis:500px;
+	flex-shrink: 0;
+	margin-top:115px;
+}
+
+
+.att_sidebar {
+	height:3000px;
+	background:#fff;
+	box-shadow: 0px 9px 49px 0px rgba(33, 33, 33, 0.31);
+	padding-top:1px;
+}
+
+
+.attt_bio_image {
+	max-width:364px;
+	width:100%;
+	margin:-95px auto 0;
+	img {
+		max-width:100%;
+		height:auto;
+		display: block;
+	}
+}
+
+
+.att_bio_content {
+	max-width:364px;
+	width:100%;
+	margin:0px auto;
+}
+
+
+.att_bio_contact_info {
+	span {
+		display: block;
+	}
+	span.att_bio_contact_title {
+		color:$red;
+		font-size: 22px;
+		letter-spacing: 0.04em;
+		@include quatro_medium;
+	}
+}
