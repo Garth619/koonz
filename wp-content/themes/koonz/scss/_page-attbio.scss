@@ -1,0 +1,201 @@
+.att_col {
+	max-width:1535px;
+	margin:0 auto;
+	display: flex;
+	
+}
+
+
+.att_sidebar_wrapper {
+	flex-basis:500px;
+	flex-shrink: 0;
+	margin-top:115px;
+}
+
+
+.att_sidebar {
+	background:#fff;
+	box-shadow: 0px 9px 49px 0px rgba(33, 33, 33, 0.31);
+	padding-top:1px;
+	padding-bottom:90px;
+}
+
+
+.attt_bio_image {
+	max-width:364px;
+	width:100%;
+	margin:-95px auto 0;
+	img {
+		max-width:100%;
+		height:auto;
+		display: block;
+	}
+}
+
+
+.att_bio_content {
+	max-width:364px;
+	width:100%;
+	margin:0px auto;
+}
+
+
+.att_bio_contact_info {
+	padding:47px 0 0;
+	span, a {
+		display: block;
+		text-decoration: none;
+	}
+	span.att_bio_contact_title {
+		color:$red;
+		font-size: 22px;
+		letter-spacing: 0.04em;
+		margin-bottom:2px;
+		@include quatro_medium;
+	}
+	.att_bio_contact {
+		color:$blue;
+		font-size:18px;
+		line-height: 24px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+		@include quatro_bold;
+	}
+}
+
+
+
+.recent_news_wrapper {
+	padding:50px 0 0;
+	margin-top:85px;
+	border-top:5px solid $red;
+	span {
+		display: block;
+	}
+	span.recent_news_title {
+		color:$red;
+		font-size:22px;
+		letter-spacing: 0.04em;
+		@include quatro_medium;
+	}
+	span.recent_news_post_title {
+		text-transform: uppercase;
+		color:$blue;
+		font-size:18px;
+		letter-spacing: 0.1em;
+		margin-top:8px;
+		@include quatro_bold;
+	}
+	span.recent_news_excerpt {
+		color:$blue;
+		font-size: 17px;
+		line-height: 26px;
+		letter-spacing: 0.02em;
+		margin-top:30px;
+		margin-bottom:30px;
+		@include quatro_bold;
+	}
+	a.sidebar_read_more {
+		color:$bluelight;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size:16px;
+		letter-spacing: 0.1em;
+		transition: all 200ms ease-in-out;
+		@include quatro_bold;
+		&:hover {
+			color:$red;
+		}
+	}
+}
+
+
+.att_bio_awards_wrapper {
+	border-top:5px solid $red;
+	margin-top:50px;
+}
+
+.att_bio_awards {
+	width:100%;
+	margin-top:20px;
+}
+
+
+.att_bio_single_award {
+	img {
+		max-width:100%;
+		height:auto;
+		display: block;
+		margin:0 auto;
+	}
+}
+
+
+
+
+.att_bio_button_wrapper {
+	display: flex;
+	max-width:290px;
+	margin:38px auto 0;
+	.att_bio_button {
+		display: flex;
+		cursor: pointer;
+		&:hover {
+			span {
+				color:$red;
+			}
+			svg {
+				rect {
+					fill:$red;
+				}
+			}
+		}
+		span {
+			color:$blue;
+			text-transform: uppercase;
+			font-size:17px;
+			display: inline-block;
+			letter-spacing: 0.2em;
+			transition: all 200ms ease-in-out;
+			@include quatro_bold;
+		}
+		svg {
+			position: relative;
+			top:2px;
+			display: inline-block;
+			rect {
+				fill:$blue;
+				transition: all 200ms ease-in-out;
+			}
+		}
+	}
+	.att_bio_button_left {
+		margin-right:27px;
+		svg {
+			margin-right:25px;
+		}
+	}
+	.att_bio_button_right {
+		position: relative;
+		span {
+			margin-left:35px;
+			margin-right:25px;
+		}
+		svg {
+			transform: rotate(180deg);
+		}
+		&:before {
+			content:"";
+			display: block;
+			width:3px;
+			height:15px;
+			background:$blue;
+			position: absolute;
+			top:3px;
+			left:0;
+		
+		}
+	}
+}
+
