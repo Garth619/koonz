@@ -214,6 +214,18 @@ nav {
 
 
 
+body:not(.page-template-template-home) {
+	nav {
+		ul.sub-menu {
+			border-left: 1px solid $grey;
+			border-right: 1px solid $grey;
+			border-bottom: 1px solid $grey;
+		}
+	}
+}
+
+
+
 nav.desktop_hover {
 	ul.menu {
 		> li.menu-item-has-children {
