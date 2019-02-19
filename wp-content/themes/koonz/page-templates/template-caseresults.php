@@ -15,110 +15,86 @@ get_header(); ?>
 		<div class="case_results_wrapper">
 			
 			<div class="cr_col">
-			
-				<div class="single_case_result">
 				
-					<div class="single_case_result_inner">
+				<?php if(get_field('case_results_column_one')): ?>
+				 
+					<?php while(has_sub_field('case_results_column_one')): ?>
+				 
+						<div class="single_case_result">
 				
-						<?php echo file_get_contents("wp-content/themes/koonz/images/caseresults_icon-01.svg"); ?>
+							<div class="single_case_result_inner">
 				
-						<span class="singe_case_result_amount">$4.0 m</span><!-- singe_case_result_amount -->
+								<?php echo file_get_contents("wp-content/themes/koonz/images/caseresults_icon-01.svg"); ?>
 				
-						<span class="single_case_result_subtitle">Settlement for Pedestrian Accident</span><!-- single_case_result_subtitle -->
+								<span class="singe_case_result_amount"><?php the_sub_field( 'amount' ); ?></span><!-- singe_case_result_amount -->
 				
-						<span class="single_case_result_content">Roger Johnson and Kasey Murray recently recovered $9,300,000 for a pedestrian who was struck by a vehicle. The pedestrian sustained life-changing crush injuries and is now disabled as a result of the accident. The case involved legal questions regarding the duties of drivers and their employers, as well as the legal impact of the recovery of workers’ compensation benefits on a personal injury lawsuit. The settlement is one of the largest in the firm’s history.</span>
+								<span class="single_case_result_subtitle"><?php the_sub_field( 'subheader' ); ?></span><!-- single_case_result_subtitle -->
 				
-					</div><!-- single_case_result_inner -->
-				
-				</div><!-- single_case_result -->
-				
-				<div class="single_case_result">
-				
-					<div class="single_case_result_inner">
-				
-						<?php echo file_get_contents("wp-content/themes/koonz/images/caseresults_icon-01.svg"); ?>
-				
-						<span class="singe_case_result_amount">$4.0 m</span><!-- singe_case_result_amount -->
-				
-						<span class="single_case_result_subtitle">Settlement for Pedestrian Accident</span><!-- single_case_result_subtitle -->
-				
-						<span class="single_case_result_content">Roger Johnson and Kasey Murray recently recovered $9,300,000 for a pedestrian who was struck by a vehicle. The pedestrian sustained life-changing crush injuries and is now disabled as a result of the accident. The case involved legal questions regarding the duties of drivers and their employers, as well as the legal impact of the recovery of workers’ compensation benefits on a personal injury lawsuit. The settlement is one of the largest in the firm’s history.</span>
+								<span class="single_case_result_content"><?php the_sub_field( 'content' ); ?></span>
 				
 					</div><!-- single_case_result_inner -->
 				
 				</div><!-- single_case_result -->
+				    
+					<?php endwhile; ?>
+				 
+				<?php endif; ?>
 			
 			</div><!-- cr_col -->
 			
 			<div class="cr_col">
 			
-				<div class="single_case_result">
+				<?php if(get_field('case_results_column_two')): ?>
+				 
+					<?php while(has_sub_field('case_results_column_two')): ?>
+				 
+						<div class="single_case_result">
 				
-					<div class="single_case_result_inner">
+							<div class="single_case_result_inner">
 				
-						<?php echo file_get_contents("wp-content/themes/koonz/images/caseresults_icon-01.svg"); ?>
+								<?php echo file_get_contents("wp-content/themes/koonz/images/caseresults_icon-01.svg"); ?>
 				
-						<span class="singe_case_result_amount">$4.0 m</span><!-- singe_case_result_amount -->
+								<span class="singe_case_result_amount"><?php the_sub_field( 'amount' ); ?></span><!-- singe_case_result_amount -->
 				
-						<span class="single_case_result_subtitle">Settlement for Pedestrian Accident</span><!-- single_case_result_subtitle -->
+								<span class="single_case_result_subtitle"><?php the_sub_field( 'subheader' ); ?></span><!-- single_case_result_subtitle -->
 				
-						<span class="single_case_result_content">Roger Johnson and Kasey Murray recently recovered $9,300,000 for a pedestrian who was struck by a vehicle. The pedestrian sustained life-changing crush injuries and is now disabled as a result of the accident. The case involved legal questions regarding the duties of drivers and their employers, as well as the legal impact of the recovery of workers’ compensation benefits on a personal injury lawsuit. The settlement is one of the largest in the firm’s history.</span>
-				
-					</div><!-- single_case_result_inner -->
-				
-				</div><!-- single_case_result -->
-				
-				<div class="single_case_result">
-				
-					<div class="single_case_result_inner">
-				
-						<?php echo file_get_contents("wp-content/themes/koonz/images/caseresults_icon-01.svg"); ?>
-				
-						<span class="singe_case_result_amount">$4.0 m</span><!-- singe_case_result_amount -->
-				
-						<span class="single_case_result_subtitle">Settlement for Pedestrian Accident</span><!-- single_case_result_subtitle -->
-				
-						<span class="single_case_result_content">Roger Johnson and Kasey Murray recently recovered $9,300,000 for a pedestrian who was struck by a vehicle. The pedestrian sustained life-changing crush injuries and is now disabled as a result of the accident. The case involved legal questions regarding the duties of drivers and their employers, as well as the legal impact of the recovery of workers’ compensation benefits on a personal injury lawsuit. The settlement is one of the largest in the firm’s history.</span>
+								<span class="single_case_result_content"><?php the_sub_field( 'content' ); ?></span>
 				
 					</div><!-- single_case_result_inner -->
 				
 				</div><!-- single_case_result -->
+				    
+					<?php endwhile; ?>
+				 
+				<?php endif; ?>
 			
 			</div><!-- cr_col -->
 			
 			<div class="cr_col">
 			
-				<div class="single_case_result">
+				<?php if(get_field('case_results_column_three')): ?>
+				 
+					<?php while(has_sub_field('case_results_column_three')): ?>
+				 
+						<div class="single_case_result">
 				
-					<div class="single_case_result_inner">
+							<div class="single_case_result_inner">
 				
-						<?php echo file_get_contents("wp-content/themes/koonz/images/caseresults_icon-01.svg"); ?>
+								<?php echo file_get_contents("wp-content/themes/koonz/images/caseresults_icon-01.svg"); ?>
 				
-						<span class="singe_case_result_amount">$4.0 m</span><!-- singe_case_result_amount -->
+								<span class="singe_case_result_amount"><?php the_sub_field( 'amount' ); ?></span><!-- singe_case_result_amount -->
 				
-						<span class="single_case_result_subtitle">Settlement for Pedestrian Accident</span><!-- single_case_result_subtitle -->
+								<span class="single_case_result_subtitle"><?php the_sub_field( 'subheader' ); ?></span><!-- single_case_result_subtitle -->
 				
-						<span class="single_case_result_content">Roger Johnson and Kasey Murray recently recovered $9,300,000 for a pedestrian who was struck by a vehicle. The pedestrian sustained life-changing crush injuries and is now disabled as a result of the accident. The case involved legal questions regarding the duties of drivers and their employers, as well as the legal impact of the recovery of workers’ compensation benefits on a personal injury lawsuit. The settlement is one of the largest in the firm’s history.</span>
-				
-					</div><!-- single_case_result_inner -->
-				
-				</div><!-- single_case_result -->
-				
-				<div class="single_case_result">
-				
-					<div class="single_case_result_inner">
-				
-						<?php echo file_get_contents("wp-content/themes/koonz/images/caseresults_icon-01.svg"); ?>
-				
-						<span class="singe_case_result_amount">$4.0 m</span><!-- singe_case_result_amount -->
-				
-						<span class="single_case_result_subtitle">Settlement for Pedestrian Accident</span><!-- single_case_result_subtitle -->
-				
-						<span class="single_case_result_content">Roger Johnson and Kasey Murray recently recovered $9,300,000 for a pedestrian who was struck by a vehicle. The pedestrian sustained life-changing crush injuries and is now disabled as a result of the accident. The case involved legal questions regarding the duties of drivers and their employers, as well as the legal impact of the recovery of workers’ compensation benefits on a personal injury lawsuit. The settlement is one of the largest in the firm’s history.</span>
+								<span class="single_case_result_content"><?php the_sub_field( 'content' ); ?></span>
 				
 					</div><!-- single_case_result_inner -->
 				
 				</div><!-- single_case_result -->
+				    
+					<?php endwhile; ?>
+				 
+				<?php endif; ?>
 			
 			</div><!-- cr_col -->
 			
