@@ -183,12 +183,49 @@ h1,h2,h3,h4 {
 		  padding:35px 0 25px;
 		  @include quatro_medium;
 	  }
-	  .blockquote_name_wrapper {
-		  display: flex;
-			align-items: center;
-			margin-top:-25px;
-			margin-bottom:71px;
-			span.blockquote_name {
+	  .blockquote_wrapper.myalign_left {
+	  	.blockquote_name_wrapper {
+		  	display: flex;
+				align-items: center;
+				margin-top:-25px;
+				margin-bottom:71px;
+				.blockquote_name {
+		 			color:$red;
+		 			font-size:19px;
+		 			letter-spacing: 0.1em;
+		 			text-transform: uppercase;
+		 			position: relative;
+		 			display: flex;
+		 			align-items: center;
+		 			margin-right:20px;
+		 			@include quatro_bold;
+		 			&:before {
+			  		content:"";
+						width:17px;
+						height:2px;
+						background: $red;
+						margin-right:9px;
+					}
+				}
+				.blockquote_name_line {
+					flex-grow:1;
+					height:2px;
+					background: $grey;
+					display: inline-block;
+		  	}
+	  	}
+	  }
+	  .blockquote_wrapper.myalign_center {
+		  text-align: center;
+		  margin-bottom: 30px;
+		  blockquote {
+			  padding-bottom:3px;
+			  padding-top:15px;
+			  p {
+				  margin-bottom: 0;
+			  }
+		  }
+	  	.blockquote_name {
 		 		color:$red;
 		 		font-size:19px;
 		 		letter-spacing: 0.1em;
@@ -197,6 +234,7 @@ h1,h2,h3,h4 {
 		 		display: flex;
 		 		align-items: center;
 		 		margin-right:20px;
+		 		justify-content: center;
 		 		@include quatro_bold;
 		 		&:before {
 			  	content:"";
@@ -206,14 +244,8 @@ h1,h2,h3,h4 {
 					margin-right:9px;
 				}
 			}
-			span.blockquote_name_line {
-				flex-grow:1;
-				height:2px;
-				background: $grey;
-				display: inline-block;
-		  }
-	  }
-  }
+		}
+	 }
   
   
  @media screen and (max-width: 1175px) {
