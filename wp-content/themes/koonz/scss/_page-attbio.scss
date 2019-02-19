@@ -199,3 +199,41 @@
 	}
 }
 
+
+
+
+.att_container {
+	flex-grow:1;
+	margin-top:15px;
+	padding-left:81px;
+}
+
+
+
+h1.att_bio_header {
+	color:$blue;
+	font-size: 60px;
+	line-height: 70px;
+	@include quatro_slab_bold_italic;
+}
+
+span.att_bio_subheader {
+	display: block;
+	color:$bluelight;
+	text-transform: uppercase;
+	font-size:18px;
+	letter-spacing: 0.1em;
+	line-height: 23px;
+	margin-top:17px;
+	margin-bottom:47px;
+	@include quatro_bold;
+	&:after {
+		content:"";
+		margin-top:38px;
+		display: block;
+		width:100%;
+		height:4px;
+		background: $bluegrad;
+	}
+}
+
