@@ -20,7 +20,15 @@ get_header(); ?>
 				
 				<?php $attorney_image = get_field( 'attorney_image' ); ?>
 				
-				<img class="att_bio_mobile" src="<?php echo $attorney_image['url']; ?>" alt="<?php echo $attorney_image['alt']; ?>" />
+				<?php if ( $attorney_image ) : ?>
+				
+					<img class="att_bio_mobile" src="<?php echo $attorney_image['url']; ?>" alt="<?php echo $attorney_image['alt']; ?>" />
+				
+				<?php else:?>
+				
+					<img class="att_bio_mobile" src="<?php bloginfo('template_directory');?>/images/placeholder.jpg" alt="Attorney Placeholder" />
+				
+				<?php endif;?>
 				
 				<?php get_template_part( 'loop', 'page' ); ?>
 				

@@ -1,0 +1,137 @@
+.meet_team_wrapper {
+	max-width:1570px;
+	margin:115px auto -110px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+.single_att_wrapper {
+	flex-basis:calc(25% - 30px);
+	margin:0 15px 110px;
+	height:617px;
+	text-align: center;
+	border-bottom:4px solid $red;
+	a {
+		text-decoration: none;
+	}
+	&:hover {
+		.single_att_inner {
+			.single_att_overlay {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+	.single_att_inner {
+		position: relative;
+		img {
+			max-width:100%;
+			height:auto;
+			display: block;
+			margin:0 auto;
+		}
+		.single_att_overlay {
+			position: absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			background: rgba(0,0,0,0.8);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			opacity: 0;
+			visibility: hidden;
+			transition: all 300ms ease-in-out;
+			&:after {
+				content:"View Profile";
+				color:#fff;
+				text-transform: uppercase;
+				font-size:15px;
+				letter-spacing: 0.2em;
+				border:3px solid #fff;
+				padding:20px 32px;
+				@include quatro_bold;
+			}
+		}
+	}
+	span.single_att_name {
+		font-size: 30px;
+		letter-spacing: 0.05em;
+		color:$blue;
+		line-height: 35px;
+		margin:21px 0 0;
+		display: block;
+		@include quatro_slab_bold;
+	}
+	span.single_att_position {
+		display: block;
+		color:$bluelight;
+		text-transform: uppercase;
+		font-size: 16px;
+		line-height: 19px;
+		margin-top:7px;
+		letter-spacing: 0.05em;
+		@include quatro_bold;
+	}
+}
+
+
+@media screen and (max-width: 1630px) {
+	
+	.meet_team_wrapper {
+		max-width: 1180px;
+	}
+	
+	
+	.single_att_wrapper {
+		flex-basis:calc(33% - 30px);
+	}
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1250px) {
+	
+	
+	
+	.meet_team_wrapper {
+		max-width: 783px;
+	}
+	
+
+	.single_att_wrapper {
+		flex-basis:calc(50% - 30px);
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1066px) {
+	
+	.meet_team_wrapper {
+		margin: 45px auto -50px;
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 865px) {
+	
+	.meet_team_wrapper {
+		display: block;
+		max-width:399px;
+	}
+	
+	.single_att_wrapper {
+		height:auto;
+		padding-bottom:23px;
+		margin-bottom:70px;
+	}
+	
+	
+} /* Media Query */

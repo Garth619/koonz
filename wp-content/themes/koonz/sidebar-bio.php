@@ -6,7 +6,15 @@
 			
 			<?php $attorney_image = get_field( 'attorney_image' ); ?>
 			
-			<img class="desktop" src="<?php echo $attorney_image['url']; ?>" alt="<?php echo $attorney_image['alt']; ?>"/>
+			<?php if ( $attorney_image ) : ?>
+			
+				<img class="desktop" src="<?php echo $attorney_image['url']; ?>" alt="<?php echo $attorney_image['alt']; ?>"/>
+			
+			<?php else:?>
+				
+				<img class="desktop" src="<?php bloginfo('template_directory');?>/images/placeholder.jpg" alt="Attorney Placeholder" />
+			
+			<?php endif;?>
 			
 		</div><!-- attt_bio_image -->
 		
