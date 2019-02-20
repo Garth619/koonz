@@ -1,32 +1,36 @@
 <footer id="footer_trigger">
 	
-	<div class="footer_inner">
+	<?php if(!is_page_template('page-templates/template-contact.php')) {?>
+	
+		<div class="footer_inner">
 		
-		<div class="footer_angled_box"></div><!-- angled_box -->
+			<div class="footer_angled_box"></div><!-- angled_box -->
 		
-		<div id="consultation" class="footer_inner_content">
+			<div id="consultation" class="footer_inner_content">
 		
-			<span class="footer_title">request your<br/> free consultation</span>
-		
-			<span class="footer_intro">We do not charge for an initial consultation and collects no fees unless compensation is recovered for you. </span><!-- footer_intro -->
-		
-			<div class="form_wrapper">
+				<span class="footer_title">request your<br/> free consultation</span>
+				
+				<span class="footer_intro">We do not charge for an initial consultation and collects no fees unless compensation is recovered for you. </span><!-- footer_intro -->
 			
-				<?php gravity_form(1, false, false, false, '', true, 12); ?>
+				<div class="form_wrapper">
+			
+					<?php gravity_form(1, false, false, false, '', true, 12); ?>
 				
-				<span class="required">
+					<span class="required">
 				
-					<span class="asterisk">*</span>
+						<span class="asterisk">*</span>
 					
-					required field
+						required field
 				
-				</span><!-- required -->
+					</span><!-- required -->
 			
-			</div><!-- form_wrapper -->
+				</div><!-- form_wrapper -->
 		
-		</div><!-- footer_inner_content -->
+			</div><!-- footer_inner_content -->
 		
-	</div><!-- footer_inner -->
+		</div><!-- footer_inner -->
+	
+	<?php } ?>
 	
 	<div class="footer_location">
 		
