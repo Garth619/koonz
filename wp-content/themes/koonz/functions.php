@@ -216,16 +216,6 @@ if (function_exists('register_sidebars')) {
         'before_title' => '<h3 class="widgettitle">',
         'after_title' => '</h3>'
     ));
-    
-    register_sidebar(array(
-        'name' => 'Archive',
-        'id' => 'archive_sidebar',
-        'description' => '',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3 class="widgettitle">',
-        'after_title' => '</h3>'
-    ));
 
  }
 

@@ -8,8 +8,6 @@
 		
 	</div><!-- sidebar -->
 	
-	
-	
 </div><!-- sidebar_wrapper -->
 
 

@@ -1,4 +1,6 @@
 
+<div class="blog_feed">
+
 <?php if ( ! have_posts() ) : ?>
 	
 	
@@ -16,21 +18,32 @@
 <?php endif; ?>
 
 
+
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	
+	<div class="single_blog_post">
 		
-	<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
+		<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
 		
-	<?php $pfx_date = get_the_date(); echo $pfx_date ?>
+		<div class="blog_meta">
 			
-	<?php echo get_the_category_list();?>
+			<span class="date">Posted on <?php $pfx_date = get_the_date(); echo $pfx_date ?> to </span><!-- date -->
 			
-	<?php echo wp_trim_words( get_the_content(), 54, '...' );?>
+			<?php echo get_the_category_list();?>
+		
+		</div><!-- blog_meta -->
+		
+		<div class="blog_excerpt">
 			
-	<?php edit_post_link( __( 'Edit'), '', '' ); ?>
+			<?php echo wp_trim_words( get_the_content(), 39, '...' );?>
+		
+		</div><!-- blog_excerpt -->
+		
+		<a class="blog_read_more" href="<?php the_permalink();?>">Read More</a><!-- blog_read_more -->
+			
+		<?php edit_post_link( __( 'Edit'), '', '' ); ?>
 
-			
+	</div><!-- single_blog_post -->		
 		
 <?php endwhile; // end of loop ?>
 
@@ -41,6 +54,8 @@
 	<?php wpbeginner_numeric_posts_nav(); ?>
 
 </div><!-- pagination -->
+
+</div><!-- blog_feed -->
 
 
 <!--
