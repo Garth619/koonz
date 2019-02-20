@@ -8,7 +8,7 @@
 
 	<div class="outer_container">
 	
-		<div class="contect_wrapper">
+		<div class="contact_wrapper">
 			
 			<div class="contact_inner">
 				
