@@ -90,3 +90,70 @@ a.blog_read_more {
 		color:$red;
 	}
 }
+
+
+
+
+.sidebar_wrapper {
+	.sidebar {
+		.widget {
+			h3 {
+				display: none;
+			}
+			ul {
+				margin-top:28px;
+				li.active {
+					a {
+						color:$red;
+					}
+				}
+				li {
+					&:last-of-type {
+						a {
+							border-bottom: none;
+						}
+					}
+					a {
+						color:$blue;
+						text-decoration: none;
+						display: block;
+						border-bottom:1px solid $grey;
+						transition: all 200ms ease-in-out;
+						&:hover {
+							color:$red;
+						}
+					}
+				}
+			}
+		}
+	 .widget_recent_entries {
+	 	ul {
+			li {
+				font-size:18px;
+				line-height: 24px;
+				text-transform: none;
+				letter-spacing: 0;
+				@include quatro_medium;
+				a {
+					padding:20px 0;
+				}
+				}
+			}
+		}
+	}
+	.widget.widget_categories {
+		ul {
+			li {
+				font-size: 16px;
+				line-height: 25px;
+				letter-spacing: 0.15em;
+				a {
+					padding:12px 0;
+				}
+			}
+		}
+	}
+}
+
+
+

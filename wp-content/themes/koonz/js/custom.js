@@ -429,6 +429,20 @@ function myNav() {
    
  
  
+ // sidebar current items for widgets
+ 
+ 	
+ 	
+ 	var pgurl = window.location.href;
+	
+	$(".sidebar_wrapper .sidebar .widget ul li").each(function(){
+  
+  if($(this).find('a').attr("href") == pgurl)
+    
+    $(this).addClass("active");
+	
+	})
+ 
  
  
  
