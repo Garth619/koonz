@@ -8,7 +8,7 @@
 		
 	</div><!-- sidebar -->
 	
-	<div class="sidebar">
+	<div class="sidebar cat_sidebar">
 		
 		<span class="sidebar_title">Categories</span><!-- sidebar_title -->
 		

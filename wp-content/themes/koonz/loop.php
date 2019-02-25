@@ -49,13 +49,15 @@
 
 <?php endif; ?>
 
+
+</div><!-- blog_feed -->
+
 <div class="pagination">
 
 	<?php wpbeginner_numeric_posts_nav(); ?>
 
 </div><!-- pagination -->
 
-</div><!-- blog_feed -->
 
 
 <!--
