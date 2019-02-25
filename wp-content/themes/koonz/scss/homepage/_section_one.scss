@@ -22,6 +22,9 @@
 .sec_one_video_wrapper {
 	display: flex;
 	align-items: center;
+	max-width: 900px;
+	cursor: pointer;
+	position: relative;
 	&:hover {
 		.play_button_wrapper {
 			&:after {
@@ -34,6 +37,15 @@
 			}
 		}
 	}
+}
+
+.mywistia {
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:2;
 }
 
 
@@ -175,6 +187,7 @@ a.sec_one_button {
 	
 	#section_one {
 		height:550px;
+		margin-top: 123px;
 	}
 	
 	
@@ -263,6 +276,7 @@ a.sec_one_button {
 	
 	#section_one {
 		text-align: center;
+		margin-top: 109px;
 		img.hero {
 			object-position:70% 0%;
 		}

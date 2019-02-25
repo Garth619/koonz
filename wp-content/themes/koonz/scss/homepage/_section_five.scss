@@ -16,7 +16,7 @@ span.sec_five_title {
 	font-size: 18px;
 	letter-spacing: 0.18em;
 	padding:20px 0;
-	max-width:827px;
+	max-width: 864px;
 	padding-left:5.5%;
 	margin-top:115px;
 	@include quatro_black;
@@ -35,6 +35,7 @@ span.sec_five_title {
 		content:"";
 		display: block;
 		width:100%;
+		max-width: 660px;
 		height:3px;
 		background: $bluelightgrad;
 		margin-top:75px;

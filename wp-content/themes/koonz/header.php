@@ -96,7 +96,7 @@
 				
 			</div><!-- phone_wrapper -->
 			
-			<a class="se_habla" href="">
+			<a class="se_habla" href="<?php bloginfo('url');?>/espanol-page">
 				
 				<span class="se_habla_title dekstop">se habla espaÑol </span><!-- se_habla_title -->
 				
@@ -122,7 +122,7 @@
 			
 			<div class="espanol">
 				
-				<a href="">ES</a>
+				<a href="<?php bloginfo('url');?>/espanol-page">ES</a>
 			
 			</div><!-- espanol -->
 			
@@ -143,7 +143,7 @@
 	
 	<div class="mobile_espanol">
 		
-		<a class="" href="">se habla espaÑol</a>
+		<a class="" href="<?php bloginfo('url');?>/espanol-page">se habla espaÑol</a>
 		
 	</div><!-- mobile_espanol -->
 	

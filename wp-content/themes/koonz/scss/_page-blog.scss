@@ -197,6 +197,24 @@ a.blog_read_more {
 }
 
 
+
+@media screen and (max-width: 1066px) {
+	
+	
+	.navigation {
+		justify-content: center;
+		ul {
+			li {
+				margin: 0 3px;
+			}
+		}
+	}
+	
+	
+	
+} /* Media Query */
+
+
 @media screen and (max-width: 767px) {
 	
 	

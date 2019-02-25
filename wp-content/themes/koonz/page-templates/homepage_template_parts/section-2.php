@@ -45,7 +45,7 @@
 					
 				</div><!-- svg_wrapper -->
 				
-				<span class="selling_point_description">we are active<br/> members of the<br/> community</span><!-- selling_point_description -->
+				<span class="selling_point_description">we are active<br/> members of the<br/> community</span><!-- selling_point_description -->
 				
 			</div><!-- selling_points_reg -->
 			
@@ -53,7 +53,7 @@
 				
 				<?php echo file_get_contents("wp-content/themes/koonz/images/sp_icon_white-02.svg"); ?>
 				
-				<span class="selling_point_hover_description">we are active<br/> members of the<br/> community</span><!-- selling_point_description -->
+				<span class="selling_point_hover_description">we are active<br/> members of the<br/> community</span><!-- selling_point_description -->
 				
 				<span class="selling_point_content">Our lawyers are leaders in their fields, exemplified by the multiple leadership positions they hold with bar and trial associations.</span><!-- selling_point_content -->
 				
@@ -109,7 +109,7 @@
 				
 				<?php echo file_get_contents("wp-content/themes/koonz/images/sp_icon_white-04.svg"); ?>
 				
-				<span class="selling_point_hover_description">over $1 billion<br/> recovered for<br/> our clients</span><!-- selling_point_description -->
+				<span class="selling_point_hover_description">over $1 billion<br/> recovered for<br/> our clients</span><!-- selling_point_description -->
 				
 				<span class="selling_point_content">Our lawyers are leaders in their fields, exemplified by the multiple leadership positions they hold with bar and trial associations.</span><!-- selling_point_content -->
 				
@@ -142,42 +142,42 @@
 				
 				<ul>
 					<li>
-						<a class="" href="">automobile Accidents</a>
+						<a class="" href="<?php bloginfo('url');?>/practice-area">automobile Accidents</a>
 					</li>
 					<li>
-						<a class="" href="">Medical Malpractice</a>
+						<a class="" href="<?php bloginfo('url');?>/practice-area">Medical Malpractice</a>
 					</li>
 					<li>
-						<a class="" href="">Workers’ Compensation</a>
+						<a class="" href="<?php bloginfo('url');?>/practice-area">Workers’ Compensation</a>
 					</li>
 					<li>
-						<a class="" href="">Traumatic Brain Injuries</a>
+						<a class="" href="<?php bloginfo('url');?>/practice-area">Traumatic Brain Injuries</a>
 					</li>
 					<li>
-						<a class="" href="">Pedestrian Accidents</a>
+						<a class="" href="<?php bloginfo('url');?>/practice-area">Pedestrian Accidents</a>
 					</li>
 					<li>
-						<a class="" href="">Injuries to Children</a>
+						<a class="" href="<?php bloginfo('url');?>/practice-area">Injuries to Children</a>
 					</li>
 					<li>
-						<a class="" href="">Construction Accidents</a>
+						<a class="" href="<?php bloginfo('url');?>/practice-area">Construction Accidents</a>
 					</li>
 					<li>
-						<a class="" href="">Spinal Cord Injuries</a>
+						<a class="" href="<?php bloginfo('url');?>/practice-area">Spinal Cord Injuries</a>
 					</li>
 					<li>
-						<a class="" href="">trucking collisions</a>
+						<a class="" href="<?php bloginfo('url');?>/practice-area">trucking collisions</a>
 					</li>
 					<li>
-						<a class="" href="">asbestos claims </a>
+						<a class="" href="<?php bloginfo('url');?>/practice-area">asbestos claims </a>
 					</li>
 					<li>
-						<a class="" href="">mesothelioma cases</a>
+						<a class="" href="<?php bloginfo('url');?>/practice-area">mesothelioma cases</a>
 					</li>
 				</ul>
 				
 				
-				<a class="view_all_button" href="">View All Practice Areas</a><!-- view_all_button -->
+				<a class="view_all_button" href="<?php bloginfo('url');?>/practice-areas/">View All Practice Areas</a><!-- view_all_button -->
 				
 			</div><!-- sec_two_sidebar -->
 			

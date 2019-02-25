@@ -87,6 +87,7 @@ img.att_bio_mobile {
 		text-transform: uppercase;
 		color:$blue;
 		font-size:18px;
+		line-height: 21px;
 		letter-spacing: 0.1em;
 		margin-top:8px;
 		@include quatro_bold;
@@ -298,6 +299,19 @@ span.att_bio_subheader {
 			margin-top: 32px;
 		}
 	}
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	.recent_news_wrapper {
+    margin-top: 50px;
+   }
 	
 	
 	

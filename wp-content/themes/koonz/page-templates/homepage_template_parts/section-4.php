@@ -8,7 +8,7 @@
 			
 			<span class="sec_four_intro">We are committed to each and every client who retains us, regardless of their cases' size.</span><!-- sec_four_intro -->
 			
-			<a class="view_all_button sec_four_button desktop" href="">View All results</a>
+			<a class="view_all_button sec_four_button desktop" href="<?php bloginfo('url');?>/results">View All results</a>
 			
 		</div><!-- sec_four_left -->
 		
@@ -211,7 +211,7 @@
 				
 			</div><!-- sec_four_slider_wrapper -->
 			
-			<a class="view_all_button sec_four_button mobile" href="">View All results</a>
+			<a class="view_all_button sec_four_button mobile" href="<?php bloginfo('url');?>/results"">View All results</a>
 			
 		</div><!-- sec_four_right -->
 		

@@ -102,9 +102,9 @@
 				
 				<ul>
 					<li>&copy; <?php echo date("Y"); ?> Koonz, McKenney, Johnson, DePaolis & Lightfoot, L.L.P.</li>
-					<li><a href="">Private Policy</a></li>
-					<li><a href="">Sitemap</a></li>
-					<li><a href="">Disclaimer</a></li>
+					<li><a href="<?php bloginfo('url');?>/private-policy">Private Policy</a></li>
+					<li><a href="<?php bloginfo('url');?>/sitemap">Sitemap</a></li>
+					<li><a href="<?php bloginfo('url');?>/disclaimer">Disclaimer</a></li>
 				</ul>
 				
 			</div><!-- copyright_left -->
@@ -113,25 +113,25 @@
 				
 				<div class="social_media">
 					
-					<a class="fb" href="" target="_blank" rel="noopener">
+					<a class="fb" href="https://www.facebook.com/Koonz.McKenney.Johnson.DePaolis.Lightfoot" target="_blank" rel="noopener">
 						
 						<?php echo file_get_contents("wp-content/themes/koonz/images/footer_logo-01.svg"); ?>
 						
 					</a>
 					
-					<a class="yt" href="" target="_blank" rel="noopener">
+					<a class="yt" href="https://www.youtube.com/user/koonzlaw" target="_blank" rel="noopener">
 						
 						<?php echo file_get_contents("wp-content/themes/koonz/images/footer_logo-02.svg"); ?>
 						
 					</a>
 					
-					<a class="twitter" href="" target="_blank" rel="noopener">
+					<a class="twitter" href="https://twitter.com/Koonz_McKenney" target="_blank" rel="noopener">
 						
 						<?php echo file_get_contents("wp-content/themes/koonz/images/footer_logo-03.svg"); ?>
 						
 					</a>
 					
-					<a class="linkedin" href="" target="_blank" rel="noopener">
+					<a class="linkedin" href="https://www.linkedin.com/company/koonz-mckenney-johnson-depaolis-&-lightfoot-l-l-p-" target="_blank" rel="noopener">
 						
 						<?php echo file_get_contents("wp-content/themes/koonz/images/footer_logo-04.svg"); ?>
 						
@@ -139,7 +139,7 @@
 					
 				</div><!-- social_media -->
 				
-				<a class="ilawyer" href="" target="_blank" rel="noopener">
+				<a class="ilawyer" href="//ilawyermarketing.com" target="_blank" rel="noopener">
 					
 					<?php echo file_get_contents("wp-content/themes/koonz/images/footer_logo-05.svg"); ?>
 					

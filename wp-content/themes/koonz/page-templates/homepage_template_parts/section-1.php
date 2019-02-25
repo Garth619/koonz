@@ -8,6 +8,8 @@
 			
 			<div class="sec_one_video_wrapper">
 				
+				<div class="mywistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=html"></div><!-- mywistia -->
+				
 				<div class="play_button_wrapper">
 					
 					<div class="play_circle"></div><!-- play_circle -->

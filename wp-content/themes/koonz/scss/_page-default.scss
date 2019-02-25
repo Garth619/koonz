@@ -1,3 +1,5 @@
+
+
 .internal_banner {
 	position: relative;
 	height:362px;
@@ -199,6 +201,10 @@
 	
 	
 	
+	#internal_main {
+		margin-top: 123px;
+	}
+	
 	.two_col {
 		display: block;
 	}
@@ -228,6 +234,7 @@
 @media screen and (max-width: 1066px) {
 	
 	
+
 	
 	.internal_banner {
 		display: none;
@@ -243,6 +250,11 @@
 
 @media screen and (max-width: 767px) {
 	
+	
+	
+	#internal_main {
+		margin-top: 109px;
+	}
 	
 	
 	.outer_container {
