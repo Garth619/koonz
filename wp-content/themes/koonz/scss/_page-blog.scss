@@ -44,7 +44,7 @@
 	line-height: 20px;
 	letter-spacing: 0.2em;
 	margin-top:-16px;
-	margin-bottom:25px;
+	margin-bottom: 27px;
 	@include quatro_black;
 	span.date {
 		display: inline;
@@ -218,10 +218,22 @@ a.blog_read_more {
 @media screen and (max-width: 767px) {
 	
 	
+	.blog_content {
+		h1.page_title {
+			&:after {
+				margin-top:25px;
+			}
+		}
+	}
+	
+	
 	.single_blog_post {
 		padding-bottom: 31px;
 		margin-bottom: 31px;
 	}
+	
+	
+	
 	
 	
 } /* Media Query */

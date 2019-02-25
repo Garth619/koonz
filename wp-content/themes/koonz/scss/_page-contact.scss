@@ -210,6 +210,9 @@ span.contact_subheader {
 	h1.contact_title {
 		font-size: 39px;
     line-height: 45px;
+    &:after {
+	    margin-top:25px;
+    }
 	}
 	
 	

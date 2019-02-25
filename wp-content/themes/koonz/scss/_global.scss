@@ -308,6 +308,9 @@ h1.internal_header {
 	h1.page_title {
 		font-size: 39px;
 		line-height: 45px;
+		&:after {
+			margin-top:25px;
+		}
 	}
 	p,ul,ol {
 		margin-bottom:28px;
