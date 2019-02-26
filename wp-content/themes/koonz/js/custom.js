@@ -219,7 +219,53 @@ jQuery(document).ready(function($){
 
 
 
+	 
+/* Waypoints
+--------------------------------------------------------------------------------------- */
 
+
+    function createWaypoint(triggerElementId, animatedElement, className, offsetVal, functionName, reverse) {
+      if(jQuery('#' + triggerElementId).length) {
+        var waypoint = new Waypoint({
+          element: document.getElementById(triggerElementId),
+          handler: function (direction) {
+            if (direction === 'down') {
+              jQuery(animatedElement).addClass(className);
+
+              if (typeof functionName === 'function') {
+                functionName();
+                this.destroy();
+              }
+
+            } else if (direction === 'up') {
+              if (reverse) {
+                jQuery(animatedElement).removeClass(className);
+              }
+
+            }
+          },
+          offset: offsetVal
+          // Integer or percent
+          // 500 means when element is 500px from the top of the page, the event triggers
+          // 50% means when element is 50% from the top of the page, the event triggers
+        });
+      }
+    }
+		
+		
+		$('#section_one').addClass('ready');	
+			
+		createWaypoint('sec_two_trigger', '#sec_two_trigger', 'visible', 300, null, true);
+		
+		createWaypoint('section_three', '#section_three', 'visible', 330, null, true);
+		
+		createWaypoint('section_four', '#section_four', 'visible', 330, null, true);
+		
+		createWaypoint('section_five', '#section_five', 'visible', 330, null, true);
+		
+		createWaypoint('footer_trigger', '#footer_trigger', 'visible', 330, null, true);
+		
+		
         
     
 

@@ -80,4 +80,6 @@
 		
 	</div><!-- sec_five_content -->
 	
+	<img class="sec_five_bg" src="<?php bloginfo('template_directory');?>/images/test_img_desktop.jpg"/>
+	
 </section><!-- section_five -->

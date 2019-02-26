@@ -120,7 +120,7 @@
 	</div><!-- selling_points_wrapper -->
 	
 	
-	<div class="sec_two_content_wrapper">
+	<div id="sec_two_trigger" class="sec_two_content_wrapper">
 		
 		<h1 class="sec_two_header">Washington DC,<br/> Virginia and Maryland Personal Injury Lawyers</h1><!-- sec_two_header -->
 		
