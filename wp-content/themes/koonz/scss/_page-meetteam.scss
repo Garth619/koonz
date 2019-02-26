@@ -23,6 +23,9 @@
 				visibility: visible;
 			}
 		}
+		span.single_att_name {
+			color:$red;
+		}
 	}
 	.single_att_inner {
 		position: relative;
@@ -64,6 +67,7 @@
 		line-height: 35px;
 		margin:21px 0 0;
 		display: block;
+		transition: all 200ms ease-in-out;
 		@include quatro_slab_bold;
 	}
 	span.single_att_position {

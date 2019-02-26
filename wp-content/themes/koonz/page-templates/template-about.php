@@ -63,7 +63,7 @@ get_header(); ?>
 		
 	</div><!-- about_wrapper -->
 	
-	<div class="about_page_slider_wrapper">
+	<div id="about_logo_trigger" class="about_page_slider_wrapper">
 		
 		<div class="about_page_slider">
 			
@@ -103,7 +103,7 @@ get_header(); ?>
 		
 	</div><!-- about_page_slider_wrapper -->
 	
-	<div class="about_page_bottom_content content">
+	<div id="about_bottom_trigger" class="about_page_bottom_content content">
 		
 		<span class="about_bottom_content"><?php the_field( 'about_bottom_content_title' ); ?></span><!-- about_bottom_content -->
 		

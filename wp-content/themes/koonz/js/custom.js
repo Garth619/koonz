@@ -253,7 +253,7 @@ jQuery(document).ready(function($){
     }
 		
 		
-		$('#section_one').addClass('ready');	
+		$('#section_one, #internal_main').addClass('ready');	
 		
 		createWaypoint('section_two', '#section_two', 'visible', 350, null, true);
 			
@@ -267,9 +267,10 @@ jQuery(document).ready(function($){
 		
 		createWaypoint('footer_trigger', '#footer_trigger', 'visible', 330, null, true);
 		
+		createWaypoint('about_logo_trigger', '#about_logo_trigger', 'visible', 400, null, true);
 		
-        
-    
+		createWaypoint('about_bottom_trigger', '#about_bottom_trigger', 'visible', 400, null, true);
+		
 
 
 
