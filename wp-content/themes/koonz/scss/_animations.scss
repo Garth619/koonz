@@ -76,12 +76,41 @@
 				transform: scale(0,1);
 				opacity: 0;
 				transform-origin: top center;
-				transition: opacity 200ms linear, transform 1400ms cubic-bezier(.17,.66,.34,.98);
+				transition: opacity 200ms linear, transform 1900ms cubic-bezier(.17,.66,.34,.98);
 			}
 		}
 	}
 	
+	.selling_points_reg {
+		.svg_wrapper {
+			svg {
+				position: relative;
+				z-index:1;
+			}
+			span.blue_bg {
+				transform: scale(0,1);
+				transform-origin: center center;
+				opacity: 0;
+				transition: opacity 300ms linear, transform 1200ms cubic-bezier(.17,.66,.34,.98);
+			}
+		}
+	}
 	
+	.selling_points_hover {
+		z-index: 2;
+	}
+	
+	
+	#section_two.visible {
+		.selling_points_reg {
+			.svg_wrapper {
+				span.blue_bg {
+					transform: scale(1,1);
+					opacity: 1;
+				}
+			}
+		}
+	}
 
 		.sec_two_content_wrapper.visible  {
 			h1 {
@@ -223,6 +252,8 @@
 	// section five
 	
 	
+	
+	
 	.sec_five_slider {
 		&:after {
 			transform: scale(0,1);
@@ -240,6 +271,12 @@
 	}
 	
 	
+	img.sec_five_bg {
+		transform: scale(1.09);
+		transition: transform 1500ms cubic-bezier(.17,.66,.34,.98);
+	}
+	
+	
 	#section_five.visible {
 		.sec_five_slider {
 			&:after {
@@ -252,6 +289,10 @@
 			transform: translateX(0);
 			opacity: 1;
 			transition-delay: 500ms;
+		}
+		img.sec_five_bg {
+			transform: scale(1);
+			opacity: 1;
 		}
 	}
 	

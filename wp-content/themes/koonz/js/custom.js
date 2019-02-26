@@ -254,6 +254,8 @@ jQuery(document).ready(function($){
 		
 		
 		$('#section_one').addClass('ready');	
+		
+		createWaypoint('section_two', '#section_two', 'visible', 350, null, true);
 			
 		createWaypoint('sec_two_trigger', '#sec_two_trigger', 'visible', 300, null, true);
 		
