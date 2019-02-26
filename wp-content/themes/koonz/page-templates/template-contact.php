@@ -33,6 +33,8 @@
 			</div><!-- contact_inner -->
 			
 		</div><!-- contect_inner -->
+		
+		<img class="contact_page_bg" src="<?php bloginfo('template_directory');?>/images/contact-bgimage.jpg"/>
 
 	</div><!-- outer_container -->
 		

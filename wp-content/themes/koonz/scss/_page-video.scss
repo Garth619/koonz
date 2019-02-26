@@ -1,0 +1,159 @@
+.video_center_wrapper {
+	max-width: 1537px;
+	margin:137px auto -105px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap:wrap;
+	&:after {
+		content:"";
+		flex-basis:32.3%;
+	}
+}
+
+
+.single_video_wrapper {
+	flex-basis:32.3%;
+	height:385px;
+	margin-bottom:105px;
+	border-bottom:5px solid $red;
+	cursor: pointer;
+	&:hover {
+		.single_video_inner_wrapper {
+			.single_video_overlay {
+				background: rgba(0,0,0,0.8);
+				.play_button_wrapper {
+					&:after {
+						background: $red;
+					}
+				}
+			}
+		}
+		span.single_video_title {
+			color:$red;
+		}
+	}
+	.single_video_inner_wrapper {
+		width:100%;
+		height:275px;
+		position: relative;
+		.mywistia_thumb {
+			position: absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+		}
+		.single_video_overlay {
+			position: absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			background: rgba(0,0,0,0.2);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			pointer-events: none;
+			transition: background 300ms ease-in-out;
+			.play_button_wrapper {
+				
+			}
+		}
+	}
+	span.single_video_title {
+		text-transform: uppercase;
+		color:$blue;
+		font-size:16px;
+		line-height: 20px;
+		letter-spacing: 0.05em;
+		display: block;
+		text-align: center;
+		margin-top:32px;
+		transition: all 200ms ease-in-out;
+		@include quatro_bold;
+	}
+}
+
+
+@media screen and (max-width: 1375px) {
+	
+	
+
+
+.video_center_wrapper {
+	max-width: 1080px;
+	&:after {
+		display: none;
+	}
+}
+
+
+
+.single_video_wrapper {
+		flex-basis:48%;
+	&:hover {
+		.single_video_inner_wrapper {
+			.single_video_overlay {
+				
+				.play_button_wrapper {
+					&:after {
+						
+					}
+				}
+			}
+		}
+	}
+	.single_video_inner_wrapper {
+		
+		.mywistia_thumb {
+			
+		}
+		.single_video_overlay {
+			
+			.play_button_wrapper {
+				
+			}
+		}
+	}
+	span.single_video_title {
+		
+	}
+}
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1066px) {
+	
+
+.video_center_wrapper {
+	margin: 91px auto -50px;
+}
+
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 975px) {
+	
+	
+.video_center_wrapper {
+	max-width: 510px;
+	margin: 51px auto -50px;
+	display: block;
+}
+
+.single_video_wrapper {
+	height:auto;
+	margin-bottom: 74px;
+	span.single_video_title {
+		margin-bottom:33px;
+	}
+}
+
+	
+} /* Media Query */

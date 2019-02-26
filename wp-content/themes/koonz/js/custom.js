@@ -145,7 +145,7 @@ jQuery(document).ready(function($){
     // createWaypoint('section-1', null, null, '100%', wistiaLoad, false)
     
     
-    $('.wistia_embed').click(function () {
+    $('.mywistia').click(function () {
         //make sure to only load if Wistia is not already loaded
         if (typeof Wistia === 'undefined') {
             $.getScript("https://fast.wistia.com/assets/external/E-v1.js", function (data, textStatus, jqxhr) {
