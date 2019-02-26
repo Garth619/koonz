@@ -5,9 +5,6 @@
 get_header(); ?>
 
 <div id="internal_main">
-	
-	
-<?php get_template_part('page-templates/internal','banner');?>
 
 	<div class="outer_container">
 	
