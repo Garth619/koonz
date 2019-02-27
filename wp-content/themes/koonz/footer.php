@@ -102,29 +102,45 @@
 				
 				<div class="social_media">
 					
-					<a class="fb" href="https://www.facebook.com/Koonz.McKenney.Johnson.DePaolis.Lightfoot" target="_blank" rel="noopener">
-						
-						<?php echo file_get_contents("wp-content/themes/koonz/images/footer_logo-01.svg"); ?>
-						
-					</a>
+					<?php if(get_field('facebook_link','option')):?>
 					
-					<a class="yt" href="https://www.youtube.com/user/koonzlaw" target="_blank" rel="noopener">
+						<a class="fb" href="<?php the_field( 'facebook_link','option'); ?>" target="_blank" rel="noopener">
 						
-						<?php echo file_get_contents("wp-content/themes/koonz/images/footer_logo-02.svg"); ?>
+							<?php echo file_get_contents("wp-content/themes/koonz/images/footer_logo-01.svg"); ?>
 						
-					</a>
+						</a>
 					
-					<a class="twitter" href="https://twitter.com/Koonz_McKenney" target="_blank" rel="noopener">
-						
-						<?php echo file_get_contents("wp-content/themes/koonz/images/footer_logo-03.svg"); ?>
-						
-					</a>
+					<?php endif;?>
 					
-					<a class="linkedin" href="https://www.linkedin.com/company/koonz-mckenney-johnson-depaolis-&-lightfoot-l-l-p-" target="_blank" rel="noopener">
+					<?php if(get_field('youtube_link','option')):?>
+					
+						<a class="yt" href="<?php the_field( 'youtube_link','option'); ?>" target="_blank" rel="noopener">
 						
-						<?php echo file_get_contents("wp-content/themes/koonz/images/footer_logo-04.svg"); ?>
+							<?php echo file_get_contents("wp-content/themes/koonz/images/footer_logo-02.svg"); ?>
 						
-					</a>
+						</a>
+					
+					<?php endif;?>
+					
+					<?php if(get_field('twitter_link','option')):?>
+					
+						<a class="twitter" href="<?php the_field( 'twitter_link','option'); ?>" target="_blank" rel="noopener">
+						
+							<?php echo file_get_contents("wp-content/themes/koonz/images/footer_logo-03.svg"); ?>
+						
+						</a>
+					
+					<?php endif;?>
+					
+					<?php if(get_field('linked_in_link','option')):?>
+					
+						<a class="linkedin" href="<?php the_field( 'linked_in_link','option'); ?>" target="_blank" rel="noopener">
+						
+							<?php echo file_get_contents("wp-content/themes/koonz/images/footer_logo-04.svg"); ?>
+						
+						</a>
+					
+					<?php endif;?>
 					
 				</div><!-- social_media -->
 				

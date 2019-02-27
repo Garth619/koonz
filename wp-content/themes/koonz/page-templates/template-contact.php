@@ -14,7 +14,7 @@
 				
 				<h1 class="contact_title"><?php the_title();?></h1><!-- contact_title -->
 				
-				<span class="contact_subheader">We do not charge for an initial consultation and collects no fees unless compensation is recovered for you. </span><!-- contact_subheader -->
+				<span class="contact_subheader"><?php the_field( 'contact_subheader' ); ?> </span><!-- contact_subheader -->
 				
 				<div class="contact_page_form">
 				
@@ -34,7 +34,9 @@
 			
 		</div><!-- contect_inner -->
 		
-		<img class="contact_page_bg" src="<?php bloginfo('template_directory');?>/images/contact-bgimage.jpg"/>
+		<?php $contact_page_image = get_field( 'contact_page_image' ); ?>
+		
+		<img class="contact_page_bg" src="<?php echo $contact_page_image['url']; ?>" alt="<?php echo $contact_page_image['alt']; ?>" />
 
 	</div><!-- outer_container -->
 		
