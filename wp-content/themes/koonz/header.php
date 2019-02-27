@@ -43,6 +43,15 @@
 
 <?php the_field('analytics_code', 'option'); ?>
 
+<script type='text/javascript'>
+(function (d, t) {
+  var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
+  bh.type = 'text/javascript';
+  bh.src = 'https://www.bugherd.com/sidebarv2.js?apikey=egeg7rezwgsyqcalokd2fw';
+  s.parentNode.insertBefore(bh, s);
+  })(document, 'script');
+</script>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -54,8 +63,10 @@
 			
 			<a class="" href="<?php bloginfo('url');?>">
 				
-				<img src="<?php bloginfo('template_directory');?>/images/hero_logo-01.svg"/>
+				<?php $firm_logo = get_field( 'firm_logo','option'); ?>
 				
+				<img src="<?php echo $firm_logo['url']; ?>" alt="<?php echo $firm_logo['alt']; ?>" />
+
 			</a>
 			
 		</div><!-- header_left -->
@@ -64,41 +75,30 @@
 			
 			<div class="phone_wrapper">
 				
-				<div class="phone_row">
+				<?php if(get_field('firm_locations','option')): ?>
+				 
+					<?php while(has_sub_field('firm_locations','option')): ?>
+				 
+						<div class="phone_row">
 					
-					<span class="location_title desktop">District of Columbia</span><!-- location_title -->
+							<span class="location_title desktop"><?php the_sub_field( 'location_title' ); ?></span><!-- location_title -->
 					
-					<span class="location_title mobile">D.C.</span><!-- location_title -->
+							<span class="location_title mobile"><?php the_sub_field( 'location_abbreviation' ); ?></span><!-- location_title -->
 				
-					<a class="phone" href="tel:2027963291">(202) 796-3291</a><!-- location_title -->
+							<a class="phone" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_sub_field('phone')); ?>"><?php the_sub_field( 'phone' ); ?></a><!-- location_title -->
 					
-				</div><!-- phone_row -->
+						</div><!-- phone_row -->
+				    
+					<?php endwhile; ?>
+				 
+				<?php endif; ?>
 				
-				<div class="phone_row">
-					
-					<span class="location_title desktop">Virginia</span><!-- location_title -->
-					
-					<span class="location_title mobile">VA</span><!-- location_title -->
-				
-					<a class="phone" href="tel:7034982928">(703) 498-2928</a><!-- location_title -->
-					
-				</div><!-- phone_row -->
-				
-				<div class="phone_row">
-					
-					<span class="location_title desktop">Maryland</span><!-- location_title -->
-					
-					<span class="location_title mobile">MD</span><!-- location_title -->
-				
-					<a class="phone" href="tel:3016374614">(301) 637-4614</a><!-- location_title -->
-					
-				</div><!-- phone_row -->
-				
+								
 			</div><!-- phone_wrapper -->
 			
-			<a class="se_habla" href="<?php bloginfo('url');?>/espanol-page">
+			<a class="se_habla" href="<?php the_field( 'se_habla_espanol_link','option'); ?>">
 				
-				<span class="se_habla_title dekstop">se habla espaÑol </span><!-- se_habla_title -->
+				<span class="se_habla_title dekstop"><?php the_field( 'se_habla_espanol','option'); ?> </span><!-- se_habla_title -->
 				
 				<span class="se_habla_line"></span><!-- se_habla_line -->
 			
@@ -108,7 +108,7 @@
 		
 		<div class="header_right">
 			
-			<a class="" href="tel:2027963291">
+			<a class="" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('firm_main_phone','option')); ?>">
 					
 				<?php echo file_get_contents("wp-content/themes/koonz/images/content01_icon-01.svg"); ?>
 				
@@ -122,7 +122,7 @@
 			
 			<div class="espanol">
 				
-				<a href="<?php bloginfo('url');?>/espanol-page">ES</a>
+				<a href="<?php the_field( 'se_habla_espanol_link','option'); ?>">ES</a>
 			
 			</div><!-- espanol -->
 			
@@ -143,7 +143,7 @@
 	
 	<div class="mobile_espanol">
 		
-		<a class="" href="<?php bloginfo('url');?>/espanol-page">se habla espaÑol</a>
+		<a class="" href="<?php bloginfo('url');?>/espanol-page"><?php the_field( 'se_habla_espanol','option'); ?></a>
 		
 	</div><!-- mobile_espanol -->
 	

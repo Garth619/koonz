@@ -972,6 +972,13 @@
 		"oAP": "/page-templates/template-caseresults.php",
 		"oF": 0
 		},
+	"/page-templates/template-cases.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/template-cases.php",
+		"oF": 0
+		},
 	"/page-templates/template-contact.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1378,11 +1385,25 @@
 		"oAP": "/sidebar-blog.php",
 		"oF": 0
 		},
+	"/sidebar-casesmedia.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/sidebar-casesmedia.php",
+		"oF": 0
+		},
 	"/sidebar.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/sidebar.php",
+		"oF": 0
+		},
+	"/single-cases_media.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/single-cases_media.php",
 		"oF": 0
 		},
 	"/single.php": {
@@ -1407,6 +1428,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/style.css.map",
+		"oF": 0
+		},
+	"/taxonomy-cases_and_media_category.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/taxonomy-cases_and_media_category.php",
 		"oF": 0
 		}
 	},

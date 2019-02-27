@@ -255,21 +255,21 @@ jQuery(document).ready(function($){
 		
 		$('#section_one, #internal_main').addClass('ready');	
 		
-		createWaypoint('section_two', '#section_two', 'visible', 350, null, true);
+		createWaypoint('section_two', '#section_two', 'visible', 380, null, false);
 			
-		createWaypoint('sec_two_trigger', '#sec_two_trigger', 'visible', 300, null, true);
+		createWaypoint('sec_two_trigger', '#sec_two_trigger', 'visible', 300, null, false);
 		
-		createWaypoint('section_three', '#section_three', 'visible', 330, null, true);
+		createWaypoint('section_three', '#section_three', 'visible', 330, null, false);
 		
-		createWaypoint('section_four', '#section_four', 'visible', 330, null, true);
+		createWaypoint('section_four', '#section_four', 'visible', 330, null, false);
 		
-		createWaypoint('section_five', '#section_five', 'visible', 330, null, true);
+		createWaypoint('section_five', '#section_five', 'visible', 330, null, false);
 		
-		createWaypoint('footer_trigger', '#footer_trigger', 'visible', 330, null, true);
+		createWaypoint('footer_trigger', '#footer_trigger', 'visible', 330, null, false);
 		
-		createWaypoint('about_logo_trigger', '#about_logo_trigger', 'visible', 400, null, true);
+		createWaypoint('about_logo_trigger', '#about_logo_trigger', 'visible', 400, null, false);
 		
-		createWaypoint('about_bottom_trigger', '#about_bottom_trigger', 'visible', 400, null, true);
+		createWaypoint('about_bottom_trigger', '#about_bottom_trigger', 'visible', 400, null, false);
 		
 
 

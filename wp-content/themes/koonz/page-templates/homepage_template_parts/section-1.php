@@ -1,14 +1,16 @@
 <section id="section_one">
 	
-		<img class="hero" src="<?php bloginfo('template_directory');?>/images/hero_img_desktop.jpg"/>
-		
-		<div class="img_overlay"></div><!-- img_overlay -->
+		<?php $section_one_image = get_field( 'section_one_image' ); ?>
+
+		<img class="hero" src="<?php echo $section_one_image['url']; ?>" alt="<?php echo $section_one_image['alt']; ?>" />
+
+	<div class="img_overlay"></div><!-- img_overlay -->
 		
 		<div class="sec_one_inner_content">
 			
-			<div class="sec_one_video_wrapper">
+			<div class="sec_one_video_wrapper" style="display:none;">
 				
-				<div class="mywistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=html"></div><!-- mywistia -->
+				<div class="mywistia wistia_embed wistia_async_<?php the_field( 'section_one_wistia_id' ); ?> popover=true popoverContent=html"></div><!-- mywistia -->
 				
 				<div class="play_button_wrapper">
 					
@@ -16,13 +18,13 @@
 					
 				</div><!-- play_button_wrapper -->
 				
-				<span class="video_cta desktop">Watch Our Video To LEarn About Us</span><!-- video_cta -->
+				<span class="video_cta desktop"><?php the_field( 'section_one_wistia_call_to_action_desktop' ); ?></span><!-- video_cta -->
 				
-				<span class="video_cta mobile">Watch Our Video</span><!-- video_cta -->
+				<span class="video_cta mobile"><?php the_field( 'section_one_wistia_call_to_action_mobile' ); ?></span><!-- video_cta -->
 				
 			</div><!-- sec_one_video_wrapper -->
 			
-			<span class="sec_one_title">Experienced<br/> at winning cases for people who need justice</span><!-- sec_one_title -->
+			<span class="sec_one_title"><?php the_field( 'section_one_title' ); ?></span><!-- sec_one_title -->
 			
 			<a class="button sec_one_button" href="#consultation"></a><!-- button -->
 			

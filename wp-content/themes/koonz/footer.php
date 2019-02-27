@@ -48,7 +48,7 @@
 				
 				<span class="address">2001 Pennsylvania<br/> Ave NW #450<br/> Washington, DC 20006</span><!-- address -->
 				
-				<a class="get_directions" href="">Map</a><!-- get_directions -->
+				<a class="get_directions" href="https://www.google.com/maps/place/2001+Pennsylvania+Ave+NW+%23450,+Washington,+DC+20006/@38.9016158,-77.0473204,17z/data=!4m13!1m7!3m6!1s0x89b7b7b0a8cf5f31:0x22747da1ab2e7624!2s2001+Pennsylvania+Ave+NW+%23450,+Washington,+DC+20006!3b1!8m2!3d38.9016158!4d-77.0451317!3m4!1s0x89b7b7b0a8cf5f31:0x22747da1ab2e7624!8m2!3d38.9016158!4d-77.0451317" target="_blank" rel="noopener">Map</a><!-- get_directions -->
 				
 				<a class="footer_phone" href="tel:2027963291">(202) 796-3291</a><!-- footer_phone -->
 			
@@ -66,7 +66,7 @@
 				
 				<span class="address">Willow Wood Plaza<br/> 10300 Eaton Pl #200<br/> Fairfax, VA 22030</span><!-- address -->
 				
-				<a class="get_directions" href="">Map</a><!-- get_directions -->
+				<a class="get_directions" href="https://www.google.com/maps/place/WillowWood+Plaza/@38.8615821,-77.3057135,17z/data=!3m1!4b1!4m5!3m4!1s0x89b64eba3238fb81:0x8ec61601329d0310!8m2!3d38.8615821!4d-77.3035248" target="_blank" rel="noopener">Map</a><!-- get_directions -->
 				
 				<a class="footer_phone" href="tel:7034982928">(703) 498-2928</a><!-- footer_phone -->
 			
@@ -84,7 +84,7 @@
 				
 				<span class="address">6301 Ivy Ln #700<br> Greenbelt, MD 20770</span><!-- address -->
 				
-				<a class="get_directions" href="">Map</a><!-- get_directions -->
+				<a class="get_directions" href="https://www.google.com/maps/place/6301+Ivy+Ln+%23700,+Greenbelt,+MD+20770/@39.0086958,-76.9010364,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c3e962c19465:0x91bc102bb984adb8!8m2!3d39.0086958!4d-76.8988477" target="_blank" rel="noopener">Map</a><!-- get_directions -->
 				
 				<a class="footer_phone" href="tel:3016374614">(301) 637-4614</a><!-- footer_phone -->
 			
