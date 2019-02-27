@@ -6,178 +6,84 @@
 	
 	<div class="selling_points_wrapper">
 		
-		<div class="selling_point_box">
+		<?php if(get_field('section_two_selling_points')): ?>
+		 
+			<?php while(has_sub_field('section_two_selling_points')): ?>
+		 
+						<div class="selling_point_box">
 			
-			<div class="selling_points_reg">
+							<div class="selling_points_reg">
 				
-				<div class="svg_wrapper">
+								<div class="svg_wrapper">
+									
+									<?php $svgicon = get_sub_field('svg_regular');?>
 					
-					<?php echo file_get_contents("wp-content/themes/koonz/images/sp_icon-01.svg"); ?>
+									<?php echo file_get_contents("wp-content/themes/koonz/images/" . $svgicon . ""); ?>
 					
-					<span class="blue_bg"></span><!-- blue_bg -->
+									<span class="blue_bg"></span><!-- blue_bg -->
 					
-				</div><!-- svg_wrapper -->
+								</div><!-- svg_wrapper -->
 				
-				<span class="selling_point_description">our attorneys<br/> have over 35 years<br/> of experience </span><!-- selling_point_description -->
+								<span class="selling_point_description"><?php the_sub_field( 'selling_points_title' ); ?> </span><!-- selling_point_description -->
 				
-			</div><!-- selling_points_reg -->
+							</div><!-- selling_points_reg -->
 			
-			<div class="selling_points_hover">
+							<div class="selling_points_hover">
+								
+								<?php $svgiconhover = get_sub_field('svg_hover');?>
 				
-				<?php echo file_get_contents("wp-content/themes/koonz/images/sp_icon_white-01.svg"); ?>
+								<?php echo file_get_contents("wp-content/themes/koonz/images/" . $svgiconhover . ""); ?>
 				
-				<span class="selling_point_hover_description">our attorneys<br/> have over 35 years<br/> of experience </span><!-- selling_point_description -->
-				<span class="selling_point_content">Our lawyers are leaders in their fields, exemplified by the multiple leadership positions they hold with bar and trial associations.</span><!-- selling_point_content -->
+								<span class="selling_point_hover_description"><?php the_sub_field( 'selling_points_title' ); ?> </span><!-- selling_point_description -->
+								<span class="selling_point_content"><?php the_sub_field( 'section_two_hover_description' ); ?></span><!-- selling_point_content -->
 				
-			</div><!-- selling_points_hover -->
+							</div><!-- selling_points_hover -->
 			
-		</div><!-- selling_point_box -->
-		
-		<div class="selling_point_box">
-			
-			<div class="selling_points_reg">
-				
-				<div class="svg_wrapper">
-					
-					<?php echo file_get_contents("wp-content/themes/koonz/images/sp_icon-02.svg"); ?>
-					
-					<span class="blue_bg"></span><!-- blue_bg -->
-					
-				</div><!-- svg_wrapper -->
-				
-				<span class="selling_point_description">we are active<br/> members of the<br/> community</span><!-- selling_point_description -->
-				
-			</div><!-- selling_points_reg -->
-			
-			<div class="selling_points_hover">
-				
-				<?php echo file_get_contents("wp-content/themes/koonz/images/sp_icon_white-02.svg"); ?>
-				
-				<span class="selling_point_hover_description">we are active<br/> members of the<br/> community</span><!-- selling_point_description -->
-				
-				<span class="selling_point_content">Our lawyers are leaders in their fields, exemplified by the multiple leadership positions they hold with bar and trial associations.</span><!-- selling_point_content -->
-				
-			</div><!-- selling_points_hover -->
-			
-		</div><!-- selling_point_box -->
-		
-		<div class="selling_point_box">
-			
-			<div class="selling_points_reg">
-				
-				<div class="svg_wrapper">
-					
-					<?php echo file_get_contents("wp-content/themes/koonz/images/sp_icon-03.svg"); ?>
-					
-					<span class="blue_bg"></span><!-- blue_bg -->
-					
-				</div><!-- svg_wrapper -->
-				
-				<span class="selling_point_description">we are leaders<br/> in our field </span><!-- selling_point_description -->
-				
-			</div><!-- selling_points_reg -->
-			
-			<div class="selling_points_hover">
-				
-				<?php echo file_get_contents("wp-content/themes/koonz/images/sp_icon_white-03.svg"); ?>
-				
-				<span class="selling_point_hover_description">we are leaders<br/> in our field</span><!-- selling_point_description -->
-			
-				<span class="selling_point_content">Our lawyers are leaders in their fields, exemplified by the multiple leadership positions they hold with bar and trial associations.</span><!-- selling_point_content -->
-				
-			</div><!-- selling_points_hover -->
-			
-		</div><!-- selling_point_box -->
-		
-		<div class="selling_point_box">
-			
-			<div class="selling_points_reg">
-				
-				<div class="svg_wrapper">
-					
-					<?php echo file_get_contents("wp-content/themes/koonz/images/sp_icon-04.svg"); ?>
-					
-					<span class="blue_bg"></span><!-- blue_bg -->
-					
-				</div><!-- svg_wrapper -->
-				
-				<span class="selling_point_description">over $1 billion<br/> recovered for<br/> our clients </span><!-- selling_point_description -->
-				
-			</div><!-- selling_points_reg -->
-			
-			<div class="selling_points_hover">
-				
-				<?php echo file_get_contents("wp-content/themes/koonz/images/sp_icon_white-04.svg"); ?>
-				
-				<span class="selling_point_hover_description">over $1 billion<br/> recovered for<br/> our clients</span><!-- selling_point_description -->
-				
-				<span class="selling_point_content">Our lawyers are leaders in their fields, exemplified by the multiple leadership positions they hold with bar and trial associations.</span><!-- selling_point_content -->
-				
-			</div><!-- selling_points_hover -->
-			
-		</div><!-- selling_point_box -->
-				
+						</div><!-- selling_point_box -->
+		    
+			<?php endwhile; ?>
+		 
+		<?php endif; ?>
+						
 	</div><!-- selling_points_wrapper -->
 	
 	
 	<div id="sec_two_trigger" class="sec_two_content_wrapper">
 		
-		<h1 class="sec_two_header">Washington DC,<br/> Virginia and Maryland Personal Injury Lawyers</h1><!-- sec_two_header -->
+		<h1 class="sec_two_header"><?php the_field( 'section_two_header' ); ?></h1><!-- sec_two_header -->
 		
-		<span class="sec_two_intro">Our law firm is one of the largest, most experienced and most respected plaintiff’s personal injury law firms in the region</span><!-- sec_two_intro -->
+		<span class="sec_two_intro"><?php the_field( 'section_two_subheader' ); ?></span><!-- sec_two_intro -->
 		
 		<div class="sec_two_container">
 			
 			<div class="sec_two_content content">
 				
-				<p>For more than 35 years, the Washington, DC, Virginia and Maryland and personal injury lawyers of Koonz, McKenney, Johnson, DePaolis & Lightfoot, L.L.P.  have successfully obtained substantial monetary compensation on behalf of individuals who have been injured or for families of those killed due to the negligence or wrongdoing of others. Our law firm is one of the largest, most experienced and most respected plaintiff’s personal injury law firms in the region. In fact, our recognitions include four of the firm’s attorneys being selected as Top Lawyers by Washingtonian Magazine, five chosen by their peers for inclusion in Washington, DC Super Lawyers and five of our personal injury attorneys being selected for inclusion in Best Lawyers in America©.</p> 
-
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. If you have been injured, have been denied an insurance claim, or if your loved one passed away wrongfully, contact one of our attorneys. We will fight for your justice and help you move forward.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+				<?php the_field( 'section_two_content' ); ?>
 				
 			</div><!-- sec_two_content -->
 			
 			<div class="sec_two_sidebar">
 				
-				<span class="sec_two_sidebar_title">Let our attorneys<br/> fight for you</span><!-- sec_two_sidebar_title -->
+				<span class="sec_two_sidebar_title"><?php the_field( 'section_two_sidebar_title' ); ?></span><!-- sec_two_sidebar_title -->
 				
 				<ul>
-					<li>
-						<a class="" href="<?php bloginfo('url');?>/practice-area">automobile Accidents</a>
-					</li>
-					<li>
-						<a class="" href="<?php bloginfo('url');?>/practice-area">Medical Malpractice</a>
-					</li>
-					<li>
-						<a class="" href="<?php bloginfo('url');?>/practice-area">Workers’ Compensation</a>
-					</li>
-					<li>
-						<a class="" href="<?php bloginfo('url');?>/practice-area">Traumatic Brain Injuries</a>
-					</li>
-					<li>
-						<a class="" href="<?php bloginfo('url');?>/practice-area">Pedestrian Accidents</a>
-					</li>
-					<li>
-						<a class="" href="<?php bloginfo('url');?>/practice-area">Injuries to Children</a>
-					</li>
-					<li>
-						<a class="" href="<?php bloginfo('url');?>/practice-area">Construction Accidents</a>
-					</li>
-					<li>
-						<a class="" href="<?php bloginfo('url');?>/practice-area">Spinal Cord Injuries</a>
-					</li>
-					<li>
-						<a class="" href="<?php bloginfo('url');?>/practice-area">trucking collisions</a>
-					</li>
-					<li>
-						<a class="" href="<?php bloginfo('url');?>/practice-area">asbestos claims </a>
-					</li>
-					<li>
-						<a class="" href="<?php bloginfo('url');?>/practice-area">mesothelioma cases</a>
-					</li>
+					
+					<?php if(get_field('section_two_practice_areas_list')): ?>
+					 
+						<?php while(has_sub_field('section_two_practice_areas_list')): ?>
+					 
+							<li>
+								<a class="" href="<?php the_sub_field( 'pa_link' ); ?>"><?php the_sub_field( 'pa_title' ); ?></a>
+							</li>
+					    
+						<?php endwhile; ?>
+					 
+					<?php endif; ?>
+					
 				</ul>
 				
-				
-				<a class="view_all_button" href="<?php bloginfo('url');?>/practice-areas/">View All Practice Areas</a><!-- view_all_button -->
+				<a class="view_all_button" href="
+<?php the_field( 'view_all_practice_areas_page_link' ); ?>"><?php the_field( 'view_all_practice_areas_verbiage' ); ?></a><!-- view_all_button -->
 				
 			</div><!-- sec_two_sidebar -->
 			

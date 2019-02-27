@@ -2,57 +2,31 @@
 	
 	<div class="sec_five_content">
 		
-		<span class="sec_five_title">we have built our business on client referrals</span><!-- sec_five_title -->
+		<span class="sec_five_title"><?php the_field( 'section_five_title' ); ?></span><!-- sec_five_title -->
 		
 		<div class="sec_five_slider_wrapper">
 			
 			<div class="sec_five_slider">
 				
-				<div class="sec_five_slide">
+				<?php if(get_field('section_five_testimonials')): ?>
+				 
+					<?php while(has_sub_field('section_five_testimonials')): ?>
+				 
+						<div class="sec_five_slide">
 					
-					<div class="sec_five_slide_content">
+							<div class="sec_five_slide_content">
 						
-						<p>“DePaolis has continued to resolve outstanding issues regarding my father’s disease and ultimate death.</p>
-
-						<p>Mr. DePaolis has never once forgotten about my Father, and while he was still alive, Mr. DePaolis was attentive and kind, while never losing sight of his purpose which was to represent my Father. He has continued to do so while maintaining contact with my family regarding all legal matters surrounding my father’s disease and death.</p>
-
-						<p>I would highly recommend Peter DePaolis and cannot say enough good about him. Thank you Mr. DePaolis!”</p>
+								<?php the_sub_field( 'content' ); ?>
 						
-					</div><!-- sec_five_slide_content -->
+							</div><!-- sec_five_slide_content -->
 					
-					<span class="sec_five_name">D. Fox</span><!-- sec_five_name -->
+							<span class="sec_five_name"><?php the_sub_field( 'name' ); ?></span><!-- sec_five_name -->
 					
-				</div><!-- sec_five_slide -->
-				
-				<div class="sec_five_slide">
-					
-					<div class="sec_five_slide_content">
-						
-						<p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationp ex ea commodo consequat.</p>
-
-						<p>Lorem ipsum d et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationp ex ea commodo consequat.”</p>
-						
-					</div><!-- sec_five_slide_content -->
-					
-					<span class="sec_five_name">Name</span><!-- sec_five_name -->
-					
-				</div><!-- sec_five_slide -->
-				
-				<div class="sec_five_slide">
-					
-					<div class="sec_five_slide_content">
-						
-						<p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationp ex ea commodo consequat.</p>
-						
-					</div><!-- sec_five_slide_content -->
-					
-					<span class="sec_five_name">Name</span><!-- sec_five_name -->
-					
-				</div><!-- sec_five_slide -->
+						</div><!-- sec_five_slide -->
+				    
+					<?php endwhile; ?>
+				 
+				<?php endif; ?>
 				
 			</div><!-- sec_five_slider -->
 			
@@ -80,6 +54,8 @@
 		
 	</div><!-- sec_five_content -->
 	
-	<img class="sec_five_bg" src="<?php bloginfo('template_directory');?>/images/test_img_desktop.jpg"/>
-	
+	<?php $section_five_image = get_field( 'section_five_image' ); ?>
+
+	<img class="sec_five_bg" src="<?php echo $section_five_image['url']; ?>" alt="<?php echo $section_five_image['alt']; ?>" />
+
 </section><!-- section_five -->
