@@ -121,10 +121,21 @@
 	}
 	
 	
+	
+	.single_att_wrapper {
+		height: 577px;
+		span.single_att_name, span.single_att_position {
+			max-width:195px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+	}
+	
+	
 } /* Media Query */
 
 
-@media screen and (max-width: 865px) {
+@media screen and (max-width: 767px) {
 	
 	.meet_team_wrapper {
 		display: block;
@@ -135,6 +146,9 @@
 		height:auto;
 		padding-bottom:23px;
 		margin-bottom:70px;
+		span.single_att_name, span.single_att_position {
+			max-width:100%;
+		}
 	}
 	
 	

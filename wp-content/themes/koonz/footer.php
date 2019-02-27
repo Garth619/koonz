@@ -8,9 +8,9 @@
 		
 			<div id="consultation" class="footer_inner_content">
 		
-				<span class="footer_title"><?php the_field( 'footer_title' ); ?></span>
+				<span class="footer_title"><?php the_field( 'footer_title','option'); ?></span>
 				
-				<span class="footer_intro"><?php the_field( 'footer_subheader' ); ?> </span><!-- footer_intro -->
+				<span class="footer_intro"><?php the_field( 'footer_subheader','option'); ?> </span><!-- footer_intro -->
 			
 				<div class="form_wrapper">
 			
@@ -38,7 +38,7 @@
 			
 			<?php if(get_field('firm_locations','options')): ?>
 			 
-				<?php while(has_sub_field('firm_locations','options')): ?>
+				<?php while(has_sub_field('firm_locations','option')): ?>
 			 
 					<div class="single_location">
 				
