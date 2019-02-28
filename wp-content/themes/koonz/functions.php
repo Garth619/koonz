@@ -188,6 +188,8 @@ remove_action('admin_print_styles', 'print_emoji_styles');
 register_nav_menus(array(
     'main_menu' => 'Main Menu',
     'pa_menu' => 'PA Sidebar Menu',
+    'dc_menu' => 'District of Columbia Sidebar Menu',
+    'va_menu' => 'Fairfax, VA Sidebar Menu',
 ));
 
 /* Widgets
@@ -440,6 +442,8 @@ function att_blockquote( $attbio, $content = null ) {
 <?php return ob_get_clean(); }
 
 add_shortcode( 'attblockquote', 'att_blockquote' );
+
+
 
 
 

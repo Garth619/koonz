@@ -1008,6 +1008,13 @@
 		"oAP": "/page-templates/template-contact.php",
 		"oF": 0
 		},
+	"/page-templates/template-dc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/template-dc.php",
+		"oF": 0
+		},
 	"/page-templates/template-home.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1034,6 +1041,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/page-templates/template-testimonials.php",
+		"oF": 0
+		},
+	"/page-templates/template-va.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/template-va.php",
 		"oF": 0
 		},
 	"/page-templates/template-video.php": {
@@ -1412,6 +1426,20 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/sidebar-casesmedia.php",
+		"oF": 0
+		},
+	"/sidebar-dc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/sidebar-dc.php",
+		"oF": 0
+		},
+	"/sidebar-va.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/sidebar-va.php",
 		"oF": 0
 		},
 	"/sidebar.php": {
