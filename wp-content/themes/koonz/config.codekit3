@@ -101,6 +101,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/images/att_shortcode.png": {
+		"ft": 32768,
+		"iS": 32573,
+		"oA": 0,
+		"oAP": "/images/att_shortcode.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/images/attorney-photo.jpg": {
 		"ft": 16384,
 		"iS": 0,
@@ -637,6 +648,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"/images/pa_shortcode.png": {
+		"ft": 32768,
+		"iS": 22672,
+		"oA": 0,
+		"oAP": "/images/pa_shortcode.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
 		"q": 100
 		},
 	"/images/placeholder.jpg": {

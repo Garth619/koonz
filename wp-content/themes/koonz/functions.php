@@ -391,5 +391,55 @@ function wpbeginner_numeric_posts_nav() {
 
 
 
+// pa blockquote 
+
+
+
+
+// Shortcode PA Blockquote
+
+function pa_blockquote( $atts, $content = null ) { 
+	
+	$atts = shortcode_atts( array(
+       'name' => '',
+   ), $atts );
+	
+	
+	ob_start();?>
+	
+	<div class="blockquote_wrapper myalign_left">
+		<blockquote>“<?php echo $content;?>”</blockquote>
+		<div class="blockquote_name_wrapper">
+		<div class="blockquote_name"><?php echo $atts['name']; ?> </div>
+		<div class="blockquote_name_line"></div>
+	</div>
+	</div>
+
+<?php return ob_get_clean(); }
+
+add_shortcode( 'pablockquote', 'pa_blockquote' );
+
+
+
+// Shortcode Att Bio Blockquote
+
+function att_blockquote( $attbio, $content = null ) { 
+	
+	$attbio = shortcode_atts( array(
+       'name' => '',
+   ), $attbio );
+	
+	
+	ob_start();?>
+	
+	<div class="blockquote_wrapper myalign_center">
+		<blockquote>“<?php echo $content;?>”</blockquote>
+		<div class="blockquote_name"><?php echo $attbio['name']; ?></div>
+	</div>
+
+<?php return ob_get_clean(); }
+
+add_shortcode( 'attblockquote', 'att_blockquote' );
+
 
 
