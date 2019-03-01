@@ -4,7 +4,7 @@
 	
 		<div class="footer_inner">
 		
-			<div class="footer_angled_box"></div><!-- angled_box -->
+			<div class="footer_angled_box" data-src="<?php bloginfo('template_directory');?>/images/bg-pattern.jpg"></div><!-- angled_box -->
 		
 			<div id="consultation" class="footer_inner_content">
 		

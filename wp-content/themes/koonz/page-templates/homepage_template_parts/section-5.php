@@ -56,6 +56,6 @@
 	
 	<?php $section_five_image = get_field( 'section_five_image' ); ?>
 
-	<img class="sec_five_bg" src="<?php echo $section_five_image['url']; ?>" alt="<?php echo $section_five_image['alt']; ?>" />
+	<img class="sec_five_bg" data-src="<?php echo $section_five_image['url']; ?>" alt="<?php echo $section_five_image['alt']; ?>" />
 
 </section><!-- section_five -->

@@ -1,6 +1,6 @@
 <section id="section_two">
 	
-	<div class="angled_box"></div><!-- angled_box -->
+	<div class="angled_box" data-src="<?php bloginfo('template_directory');?>/images/bg-pattern.jpg"></div><!-- angled_box -->
 	
 	
 	

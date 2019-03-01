@@ -1,8 +1,15 @@
 <section id="section_one">
 	
+		
 		<?php $section_one_image = get_field( 'section_one_image' ); ?>
+		
+		<?php $section_one_image_webp = get_field( 'section_one_image_webp' ); ?>
 
-		<img class="hero" src="<?php echo $section_one_image['url']; ?>" alt="<?php echo $section_one_image['alt']; ?>" />
+		<img class="hero" data-jpg="<?php echo $section_one_image['url']; ?>" data-webp="<?php echo $section_one_image_webp['url']; ?>" alt="<?php echo $section_one_image['alt']; ?>" />
+		
+		
+		
+		
 
 		<div class="img_overlay"></div><!-- img_overlay -->
 		
